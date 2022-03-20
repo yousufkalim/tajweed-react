@@ -1,0 +1,44 @@
+.box {
+  background: linear-gradient(
+    108.15deg,
+    #e3e3e3 11.66%,
+    rgba(227, 227, 227, 0) 62.34%
+  );
+  border-radius: 50px;
+  font-family: "myFirstFont";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: left;
+}
+
+strong {
+  font-weight: bold;
+  color: #47b45f;
+}
+.box-content {
+  margin-top: 13%;
+  margin-left: 5%;
+}
+.box-buttons {
+  margin-left: 5%;
+  margin-bottom: 15%;
+}
+
+.table-image {
+  position: relative;
+  top: 5px;
+  left: -9px;
+  border-radius: 35px;
+
+  height: 460;
+  width: 368px;
+}
+.box-image {
+  position: relative;
+  height: 833px;
+  width: 100%;
+  /* left: 1028px;
+  top: 2489px; */
+  border-radius: 0px;
+}

@@ -1,4 +1,39 @@
 /* Header Component Style */
-h1 {
-  color: red;
+.header-content {
+  font-family: "myFirstFont";
+  position: relative;
+  width: 32%;
+  height: 278px;
+  left: 2%;
+  top: 80px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #484848;
+}
+
+span {
+  color: #47b45f;
+  font-size: 86px;
+  font-family: "myFirstFont";
+  font-weight: 1000;
+  line-height: 118px;
+
+  letter-spacing: 0px;
+  text-align: left;
+}
+.header-image {
+  height: 799px;
+  width: 100%;
+  position: relative;
+  left: 50%;
+}
+h6 {
+  font-size: 17px;
+}
+.button1 {
+  border-radius: 20px;
+  padding-left: 7%;
+  padding-right: 7%;
 }

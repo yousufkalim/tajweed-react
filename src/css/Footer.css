@@ -1,0 +1,40 @@
+.footer {
+  padding-bottom: 2%;
+  font-family: "myfirstfont";
+}
+.end {
+  border-top: 1px solid #e3e3e3;
+  padding-top: 2%;
+}
+.f-nav {
+  color: #666666;
+  font-size: 25px;
+  margin-top: 12%;
+}
+.icons {
+  margin-top: 30%;
+}
+.icons img {
+  margin-right: 2%;
+}
+#f-menu li {
+  margin-bottom: 3%;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+}
+.link {
+  color: rgb(11, 39, 131);
+  text-decoration: none;
+  font-weight: 750;
+}
+
+.f-text h6 {
+  display: inline;
+  margin-right: 6%;
+  font-weight: 600;
+  font-size: 15px;
+}
+.box-buttons2 {
+  margin-left: -20px;
+}
