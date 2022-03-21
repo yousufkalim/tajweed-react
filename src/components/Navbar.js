@@ -12,7 +12,7 @@ const Navbar = () => {
             <img src={Logo} alt="tajweed_logo" />
           </div>
           <div>
-            <ul id="menu">
+            <ul id="menu" className="mt-3">
               <li>
                 <NavLink to="/" className="nav-item">
                   About
