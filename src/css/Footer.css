@@ -1,5 +1,5 @@
 .footer {
-  font-family: "myfirstfont";
+  font-family: "CenturyGothic";
   background: url("../assets/images/Background.svg");
   /* background-size: 100% 633px; */
   height: 633px;
@@ -15,7 +15,7 @@
 }
 .end {
   padding-top: 2%;
-  margin-left: 6%;
+  margin-left: 7%;
   padding-bottom: 1%;
 }
 .s1 {

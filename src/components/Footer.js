@@ -4,7 +4,7 @@ import Logo from "../assets/images/Logo.svg";
 import Facebook from "../assets/images/Facebook.svg";
 import instagram from "../assets/images/instagram.svg";
 import youtube from "../assets/images/youtube.svg";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Google from "../assets/images/Google.svg";
 import Apple from "../assets/images/Apple.svg";
 import BackToTopBottom from "../assets/images/BackToTopBottom.svg";
@@ -34,19 +34,19 @@ const Footer = () => {
             <div>
               <ul id="f-menu" className="mt-4 p-4">
                 <li>
-                  <NavLink to="/" className="nav-item">
+                  <Link to="/" className="nav-item">
                     About
-                  </NavLink>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink to="/" className="nav-item">
+                  <Link to="/" className="nav-item">
                     Contact us
-                  </NavLink>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink to="/" className="nav-item">
+                  <Link to="/" className="nav-item">
                     Products
-                  </NavLink>
+                  </Link>
                 </li>
               </ul>
             </div>
