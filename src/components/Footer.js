@@ -7,30 +7,30 @@ import youtube from "../assets/images/youtube.svg";
 import { NavLink } from "react-router-dom";
 import Google from "../assets/images/Google.svg";
 import Apple from "../assets/images/Apple.svg";
+import BackToTopBottom from "../assets/images/BackToTopBottom.svg";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="container">
-        {/* <img src={BG} width="100%" alt="" />*/}
-        <Row>
+      <div className="c1">
+        <Row className="s1">
           <Col lg="4">
             {" "}
-            <div className="logo">
+            <div className="logo text-center">
               <img src={Logo} width="50%" alt="tajweed_logo" />
             </div>
-            <div className="icons">
+            <div className="icons text-center">
               <img src={Facebook} alt="tajweed_logo" />
               <img src={instagram} alt="tajweed_logo" />
               <img src={youtube} alt="tajweed_logo" />
             </div>
-            <div className="f-text">
-              <h6>Terms & Conditions</h6>
+            <div className="f-text pb-3">
+              <h6 style={{ marginLeft: "34%" }}>Terms & Conditions</h6>
               <h6>Privacy Policy</h6>
             </div>
           </Col>
-          <Col lg="4">
-            <strong className="f-nav">Navigate</strong>{" "}
+          <Col lg="3">
+            <strong className="f-nav text-center">Navigate</strong>{" "}
             <div>
               <ul id="f-menu" className="mt-4 p-4">
                 <li>
@@ -52,17 +52,25 @@ const Footer = () => {
             </div>
           </Col>
           <Col lg="4">
-            <h6>
-              Get App & learn <strong> Tajweed</strong> anytime & anywhere even
-              without internet.
+            <h6 className="section3 mt-4 py-4">
+              Get App & learn <strong> Tajweed</strong> anytime & <br />{" "}
+              anywhere even without internet.
             </h6>
             <div className="box-buttons2">
-              <img src={Apple} className="p-4" alt="Apple" />
+              <img src={Apple} className="p-3" alt="Apple" />
               <img src={Google} alt="Google" />
             </div>
           </Col>
+
+          <Col lg="1">
+            <img
+              src={BackToTopBottom}
+              className="up-arrow"
+              alt="BackToTopBottom"
+            />
+          </Col>
         </Row>
-        <Row className="end">
+        <Row className="end ">
           <h6>
             © 2022 <strong>Tajweed Made Easy</strong> , Developed by{" "}
             <a href="" className="link">

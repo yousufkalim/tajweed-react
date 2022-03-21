@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Header />
-      {/* <Slider /> */}
+      <Slider />
       <JoinSection />
       <VocalSection />
       <Footer />
