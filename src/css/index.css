@@ -1,11 +1,12 @@
 /* Importing all CSS files */
 @import url("./Header.css");
 @import url("./Navbar.css");
+@import url("./Slider.css");
 @import url("./JoinSection.css");
 @import url("./Footer.css");
 
 @font-face {
-  font-family: "myFirstFont";
+  font-family: "CenturyGothic";
   src: url("../assets/fonts/Century Gothic.ttf");
 }
 /* Defaults */

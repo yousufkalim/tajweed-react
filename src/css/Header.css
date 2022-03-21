@@ -1,6 +1,6 @@
 /* Header Component Style */
 .header-content {
-  font-family: "myFirstFont";
+  font-family: "CenturyGothic";
   position: relative;
   width: 32%;
   height: 278px;
@@ -16,7 +16,7 @@
 span {
   color: #47b45f;
   font-size: 86px;
-  font-family: "myFirstFont";
+  font-family: "CenturyGothic";
   font-weight: 1000;
   line-height: 118px;
 

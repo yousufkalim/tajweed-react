@@ -8,7 +8,7 @@
   text-align: left;
 }
 .navbar {
-  font-family: "myFirstFont";
+  font-family: "CenturyGothic";
   height: 100px;
   display: flex !important;
   flex-direction: row !important;
@@ -50,6 +50,8 @@
   border-radius: 20px;
   margin-right: 20px;
   padding: 8px 30px;
+  border: none;
+  box-shadow: 2px 2px 10px #47b45f;
 }
 .button1 {
   border-radius: 20px;
