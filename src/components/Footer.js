@@ -12,11 +12,11 @@ import BackToTopBottom from "../assets/images/BackToTopBottom.svg";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="c1">
+      <div className="c3">
         <Row className="s1">
           <Col lg="4">
             {" "}
-            <div className="logo text-center">
+            <div className="f-logo text-center">
               <img src={Logo} width="50%" alt="tajweed_logo" />
             </div>
             <div className="icons text-center">
@@ -34,24 +34,24 @@ const Footer = () => {
             <div>
               <ul id="f-menu" className="mt-4 p-4">
                 <li>
-                  <Link to="/" className="nav-item">
+                  <Link to="/" className="nav-item1">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="nav-item">
+                  <Link to="/" className="nav-item1">
                     Contact us
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="nav-item">
+                  <Link to="/" className="nav-item1">
                     Products
                   </Link>
                 </li>
               </ul>
             </div>
           </Col>
-          <Col lg="4">
+          <Col lg="4" className="col3">
             <h6 className="section3 mt-4 py-4">
               Get App & learn <strong> Tajweed</strong> anytime & <br />{" "}
               anywhere even without internet.
@@ -67,6 +67,8 @@ const Footer = () => {
               src={BackToTopBottom}
               className="up-arrow"
               alt="BackToTopBottom"
+              onClick={() => window.scrollTo(0, 0)}
+              style={{ cursor: "pointer" }}
             />
           </Col>
         </Row>

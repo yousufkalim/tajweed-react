@@ -30,7 +30,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="btns">
             <Button color="outline-success" className="button1">
               Login
             </Button>

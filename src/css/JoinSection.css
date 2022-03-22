@@ -42,3 +42,24 @@ strong {
   top: 2489px; */
   border-radius: 0px;
 }
+
+@media only screen and (max-width: 600px) {
+  .table-image {
+    display: none;
+  }
+
+  .box-image {
+    display: none;
+  }
+  .box-content {
+    font-size: 20px;
+
+    text-align: left;
+  }
+  .box-buttons {
+    text-align: center;
+  }
+  .img1 {
+    padding: 0px !important;
+  }
+}
