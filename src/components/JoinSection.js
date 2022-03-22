@@ -15,7 +15,7 @@ const JoinSection = () => {
               device to <strong>learn smartly.</strong>
             </h1>
             <div className="box-buttons">
-              <img src={Apple} className="p-4" alt="Apple" />
+              <img src={Apple} className="img1 p-4" alt="Apple" />
               <img src={Google} alt="Google" />
             </div>
             <img src={Table} className="table-image" alt="table" />

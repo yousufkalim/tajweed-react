@@ -42,11 +42,11 @@ const Slider = () => {
               Explore our Book in 7 different Languages
             </h4>
           </Row>
-          <Row>
-            <Col lg="6" className="text-right">
+          <Row className="slider">
+            <Col lg="6" className=" c1 text-right">
               <img src={Picture} className="image" alt="img" />
             </Col>
-            <Col lg="6">
+            <Col lg="6" className="c2">
               <img
                 src={TajweedMadeEasy}
                 className="book"
