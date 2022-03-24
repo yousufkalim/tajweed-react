@@ -10,6 +10,7 @@
   margin-bottom: 5%;
   font-weight: 900;
   font-size: 26px;
+  font-family: "GothicBold";
   font-style: normal;
   line-height: 44px;
   letter-spacing: 0px;
@@ -28,9 +29,7 @@
   letter-spacing: 0px;
   text-align: center;
 }
-#bold {
-  font-weight: bolder !important;
-}
+
 .image {
   height: 533px;
   width: 100%;
@@ -53,7 +52,8 @@
   text-align: left;
 }
 .price {
-  font-size: 90px;
+  font-size: 80px;
+  font-family: "GothicBold";
   font-style: normal;
   font-weight: 700;
   line-height: 118px;

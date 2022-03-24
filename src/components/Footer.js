@@ -75,7 +75,7 @@ const Footer = () => {
         <Row className="end ">
           <h6>
             © 2022 <strong>Tajweed Made Easy</strong> , Developed by{" "}
-            <a href="" className="link">
+            <a href="https://www.falconconsulting.fr" className="link">
               Falcon Consulting
             </a>
             . All rights reserved.

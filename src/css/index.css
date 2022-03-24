@@ -13,6 +13,10 @@
   font-family: "CenturyGothic";
   src: url("../assets/fonts/Century Gothic.ttf");
 }
+@font-face {
+  font-family: "GothicBold";
+  src: url("../assets/fonts/GOTHICB.TTF");
+}
 /* Defaults */
 * {
   padding: 0;
