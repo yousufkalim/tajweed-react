@@ -42,7 +42,7 @@ const Register = () => {
                   type="text"
                   value={user.firstName}
                   name="firstName"
-                  // onChange={handleInputChange}
+                  onChange={handleInputChange}
                   style={{
                     borderRadius: "20px",
                     border: "1px solid black",

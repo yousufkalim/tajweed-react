@@ -41,7 +41,7 @@ const Course = () => {
                   type="text"
                   value={course.fatherName}
                   name="fatherName"
-                  // onChange={handleInputChange}
+                  onChange={handleInputChange}
                   style={{
                     borderRadius: "20px",
                     border: "1px solid black",
