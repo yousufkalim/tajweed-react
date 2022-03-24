@@ -5,6 +5,8 @@
 @import url("./JoinSection.css");
 @import url("./VocalSection.css");
 @import url("./Footer.css");
+@import url("./Register.css");
+@import url("./FormTopBar.css");
 
 @font-face {
   font-family: "CenturyGothic";

@@ -1,0 +1,12 @@
+.img-txt {
+  position: absolute;
+  margin-left: -16%;
+}
+
+.form-text {
+  font-family: "CenturyGothic";
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+}

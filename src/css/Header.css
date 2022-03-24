@@ -13,7 +13,7 @@
   color: #484848;
 }
 
-span {
+.tajweed_text {
   color: #47b45f;
   font-size: 86px;
   font-family: "CenturyGothic";
@@ -51,7 +51,7 @@ h6 {
     font-size: 22px;
     color: #484848;
   }
-  span {
+  .tajweed_text {
     color: #47b45f;
     font-size: 42px;
     font-family: "CenturyGothic";

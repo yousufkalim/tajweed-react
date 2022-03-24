@@ -10,7 +10,7 @@ const Header = () => {
         <Col lg="6" className="header-content">
           {" "}
           <h1>Explore the new Unique & Institutive way to learn</h1>{" "}
-          <span>Tajweed.</span>
+          <span className="tajweed_text">Tajweed.</span>
           <h6 className="h-text mt-4">Register as a Regular Student</h6>
           <Button color="outline-success" className="button1 py-2 ">
             Get Started
