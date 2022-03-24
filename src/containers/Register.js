@@ -24,7 +24,14 @@ const Register = () => {
     <>
       <FormTopBar />
       <div className="container p-lg-4">
-        <h3 style={{ marginTop: "4%", marginBottom: "2%" }}>
+        <h3
+          className="form-head"
+          style={{
+            marginTop: "4%",
+            marginBottom: "2%",
+            fontFamily: "GothicBold",
+          }}
+        >
           Register as a Regular Student
         </h3>
         <Form>

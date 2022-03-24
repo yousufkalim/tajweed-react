@@ -22,7 +22,15 @@ const Payment = () => {
       <FormTopBar />
 
       <div className="container p-lg-4">
-        <h3 style={{ marginTop: "4%", marginBottom: "2%" }}>Payment Details</h3>
+        <h3
+          style={{
+            marginTop: "4%",
+            marginBottom: "2%",
+            fontFamily: "GothicBold",
+          }}
+        >
+          Payment Details
+        </h3>
         <Form>
           <Row>
             <Col lg="6">

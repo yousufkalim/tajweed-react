@@ -23,7 +23,13 @@ const Course = () => {
     <>
       <FormTopBar />
       <div className="container p-lg-4">
-        <h3 style={{ marginTop: "4%", marginBottom: "2%" }}>
+        <h3
+          style={{
+            marginTop: "4%",
+            marginBottom: "2%",
+            fontFamily: "GothicBold",
+          }}
+        >
           Choose your Course Details
         </h3>
         <Form>
