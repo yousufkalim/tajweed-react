@@ -2,6 +2,7 @@ import RightSide from "../assets/images/RightSide.svg";
 import { Row, Col, FormGroup, Form, Input, Label, Button } from "reactstrap";
 import { useState } from "react";
 import FormTopBar from "../components/FormTopBar";
+import { Link } from "react-router-dom";
 
 const Course = () => {
   const [course, setCourse] = useState({
@@ -251,9 +252,12 @@ const Course = () => {
             </Row>
           </Row>
 
-          <Button color="success" className="button my-4">
-            Register
-          </Button>
+          <Link to="Payment">
+            {" "}
+            <Button color="success" className="button my-4">
+              Register
+            </Button>
+          </Link>
         </Form>
       </div>
       <div className="">
