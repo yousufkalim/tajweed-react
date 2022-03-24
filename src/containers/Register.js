@@ -62,7 +62,7 @@ const Register = () => {
                   className="form-control-alternative"
                   id="input-lname"
                   placeholder="Doe"
-                  type="email"
+                  type="text"
                   value={user.lastName}
                   name="lastName"
                   onChange={handleInputChange}
