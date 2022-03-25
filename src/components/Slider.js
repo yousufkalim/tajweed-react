@@ -42,7 +42,10 @@ const Slider = () => {
               Explore our Book in 7 different Languages
             </h4>
           </Row>
-          <Row className="slider">
+          <Row
+            className="slider"
+            style={{ height: "100%", backgroundColor: "inherit" }}
+          >
             <Col lg="6" className=" c1 text-right">
               <img src={Picture} className="image" alt="img" />
             </Col>
@@ -58,7 +61,7 @@ const Slider = () => {
               </p>
               <h1 className="price pb-3">$17</h1>
               <Button color="success" id="s-button" className="button">
-                GET NOW
+                Get Now
               </Button>
             </Col>
           </Row>

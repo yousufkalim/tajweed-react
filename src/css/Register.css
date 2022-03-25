@@ -1,0 +1,15 @@
+.container {
+  font-family: "CenturyGothic";
+  position: relative;
+  z-index: 5;
+}
+.r-vector {
+  position: absolute;
+  /* bottom: 0.89px;
+  height: 940px; */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}

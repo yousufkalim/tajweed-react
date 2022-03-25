@@ -5,10 +5,17 @@
 @import url("./JoinSection.css");
 @import url("./VocalSection.css");
 @import url("./Footer.css");
+@import url("./Register.css");
+@import url("./FormTopBar.css");
+@import url("./OrderDetails.css");
 
 @font-face {
   font-family: "CenturyGothic";
   src: url("../assets/fonts/Century Gothic.ttf");
+}
+@font-face {
+  font-family: "GothicBold";
+  src: url("../assets/fonts/GOTHICB.TTF");
 }
 /* Defaults */
 * {

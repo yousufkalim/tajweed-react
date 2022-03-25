@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "reactstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Logo from "../assets/images/Logo.svg";
 
 const Navbar = () => {
@@ -34,9 +34,11 @@ const Navbar = () => {
             <Button color="outline-success" className="button1">
               Login
             </Button>
-            <Button color="success" className="button">
-              Register
-            </Button>
+            <Link to="Register">
+              <Button color="success" className="button">
+                Register
+              </Button>
+            </Link>
           </div>
         </nav>
       </div>

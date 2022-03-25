@@ -12,14 +12,24 @@
   line-height: 59px;
   color: #484848;
 }
+.h-text {
+  font-family: "GothicBold";
+  color: #787878;
+  letter-spacing: 1px;
+}
+.head-text {
+  font-family: "GothicBold";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 100;
+}
 
-span {
+.tajweed_text {
   color: #47b45f;
   font-size: 86px;
-  font-family: "CenturyGothic";
-  font-weight: 1000;
+  font-family: "GothicBold";
+  font-weight: 400;
   line-height: 118px;
-
   letter-spacing: 0px;
   text-align: left;
 }
@@ -34,8 +44,11 @@ h6 {
 }
 .button1 {
   border-radius: 20px;
+  font-family: "GothicBold";
   padding-left: 7%;
   padding-right: 7%;
+  color: #47b45f;
+  border-color: #47b45f;
 }
 
 @media only screen and (max-width: 600px) {
@@ -51,7 +64,7 @@ h6 {
     font-size: 22px;
     color: #484848;
   }
-  span {
+  .tajweed_text {
     color: #47b45f;
     font-size: 42px;
     font-family: "CenturyGothic";
