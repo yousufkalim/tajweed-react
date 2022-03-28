@@ -14,7 +14,10 @@ const FormTopBar = () => {
       </div>
       <div>
         {" "}
-        <h6 className="img-txt text-white">Already Registered ? Login</h6>
+        <Link to="/Login">
+          {" "}
+          <h6 className="img-txt text-white">Already Registered ? Login</h6>
+        </Link>
       </div>
     </div>
   );
