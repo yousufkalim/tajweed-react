@@ -31,9 +31,12 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="btns">
-            <Button color="outline-success" className="button1">
-              Login
-            </Button>
+            <Link to="Login">
+              {" "}
+              <Button color="outline-success" className="button1">
+                Login
+              </Button>{" "}
+            </Link>
             <Link to="Register">
               <Button color="success" className="button">
                 Register

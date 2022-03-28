@@ -2,6 +2,17 @@
   font-family: "CenturyGothic";
   position: relative;
   z-index: 5;
+  color: #484848;
+
+  position: relative;
+}
+.l-container {
+  font-family: "CenturyGothic";
+  position: relative;
+  z-index: 5;
+  position: relative;
+  width: 100%;
+  top: 0;
 }
 .r-vector {
   position: absolute;
@@ -12,4 +23,12 @@
   object-fit: cover;
   top: 0;
   left: 0;
+}
+.login-end {
+  font-family: "GothicBold";
+  color: #484848;
+  font-weight: 200;
+  margin-top: 28%;
+  text-align: right;
+  margin-right: 17%;
 }
