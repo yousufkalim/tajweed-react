@@ -17,7 +17,10 @@ const Footer = () => {
           <Col lg="4">
             {" "}
             <div className="f-logo text-center">
-              <img src={Logo} width="50%" alt="tajweed_logo" />
+              <Link to="/">
+                {" "}
+                <img src={Logo} width="50%" alt="tajweed_logo" />
+              </Link>
             </div>
             <div className="icons text-center">
               <img src={Facebook} alt="tajweed_logo" />
@@ -74,7 +77,7 @@ const Footer = () => {
         </Row>
         <Row className="end ">
           <h6>
-            © 2022 <strong>Tajweed Made Easy</strong> , Developed by{" "}
+            © 2022 <strong>Tajweed Made Easy</strong>, Developed by{" "}
             <a href="https://www.falconconsulting.fr" className="link">
               Falcon Consulting
             </a>

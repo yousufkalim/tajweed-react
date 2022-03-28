@@ -9,7 +9,10 @@ const Navbar = () => {
       <div className="nav">
         <nav className="container navbar">
           <div className="logo">
-            <img src={Logo} alt="tajweed_logo" />
+            <Link to="/">
+              {" "}
+              <img src={Logo} alt="tajweed_logo" />
+            </Link>
           </div>
           <div>
             <ul id="menu" className="mt-3">

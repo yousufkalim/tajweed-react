@@ -15,12 +15,15 @@ const Login = () => {
   return (
     <>
       <div className="">
-        <img
-          src={Logo2}
-          className="p-4"
-          style={{ position: "relative", zIndex: "5" }}
-          alt="Logo"
-        />
+        <Link to="/">
+          {" "}
+          <img
+            src={Logo2}
+            className="p-4"
+            style={{ position: "relative", zIndex: "5" }}
+            alt="Logo"
+          />
+        </Link>
         <img src={LeftSide} className="r-vector" alt="" />
       </div>
       <div className=" l-container p-lg-4">
