@@ -27,6 +27,11 @@ const Slider = () => {
   };
   return (
     <div className="slider">
+      <Row>
+        <h4 className=" sliderheading text-center">
+          Explore our Book in 7 different Languages
+        </h4>
+      </Row>
       <Carousel
         responsive={responsive}
         infinite={true}
@@ -37,11 +42,6 @@ const Slider = () => {
       >
         {/* {reviews.map((item) => ( */}
         <div className="s-container container">
-          <Row>
-            <h4 className=" sliderheading text-center">
-              Explore our Book in 7 different Languages
-            </h4>
-          </Row>
           <Row
             className="slider"
             style={{ height: "100%", backgroundColor: "inherit" }}

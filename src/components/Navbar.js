@@ -35,7 +35,7 @@ const Navbar = () => {
               {" "}
               <Button color="outline-success" className="button1">
                 Login
-              </Button>{" "}
+              </Button>
             </Link>
             <Link to="Register">
               <Button color="success" className="button">

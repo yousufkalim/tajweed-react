@@ -7,6 +7,7 @@ import Register from "../containers/Register";
 import Course from "../containers/Course";
 import Payment from "../containers/Payment";
 import Login from "../containers/Login";
+import PaymentsAfterLogin from "../containers/PaymentsAfterLogin";
 
 const index = () => {
   return (
@@ -16,6 +17,7 @@ const index = () => {
       <Route exact path="/course" component={Course} />
       <Route exact path="/payment" component={Payment} />
       <Route exact path="/login" component={Login} />
+      <Route exact path="/PaymentsAfterLogin" component={PaymentsAfterLogin} />
     </Switch>
   );
 };

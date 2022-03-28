@@ -88,7 +88,7 @@ const Login = () => {
                       }}
                     />
                   </FormGroup>
-                  <Link to="/">
+                  <Link to="PaymentsAfterLogin">
                     {" "}
                     <Button color="success" className="button my-4">
                       Login
