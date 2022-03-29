@@ -3,10 +3,10 @@ import { Button } from "reactstrap";
 import { NavLink, Link } from "react-router-dom";
 import Logo from "../assets/images/Logo.svg";
 
-const Navbar = () => {
+const Navbar = ({ about }) => {
   return (
     <div>
-      <div className="nav">
+      <div className={about ? "navAbout" : "nav"}>
         <nav className="container navbar">
           <div className="logo">
             <Link to="/">

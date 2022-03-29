@@ -19,7 +19,7 @@ const ContactUs = () => {
   };
   return (
     <>
-      <Navbar />
+      <Navbar about={false} />
       <div>
         <div className="container contactBox">
           <Row>
