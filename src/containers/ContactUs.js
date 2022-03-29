@@ -24,15 +24,7 @@ const ContactUs = () => {
         <div className="container contactBox">
           <Row>
             <Col lg="6">
-              <h1
-                className="box-content"
-                style={{
-                  fontFamily: "GothicBold",
-                  fontSize: "48px",
-                }}
-              >
-                Get a quote
-              </h1>
+              <h1 className="boxContent">Get a quote</h1>
               <p className="contact-text">
                 Fill up the form and our Team will get back to you within 24
                 hours.
@@ -46,7 +38,17 @@ const ContactUs = () => {
                   <img src={Email} alt="email" /> &nbsp;contact@tajweed.com
                 </div>
               </div>
-              <img src={Table} className="table-image" alt="table" />
+              <img
+                src={Table}
+                className="table-image"
+                style={{
+                  position: "absolute",
+                  left: "0",
+                  bottom: "0",
+                  top: "auto",
+                }}
+                alt="table"
+              />
             </Col>
 
             <Col lg="6" className="second-col">

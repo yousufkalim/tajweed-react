@@ -51,6 +51,9 @@
 .nav-item:hover {
   color: #47b45f;
 }
+.active-nav-item {
+  color: #47b45f;
+}
 .nav-item:focus {
   color: #47b45f;
 }
