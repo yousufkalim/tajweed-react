@@ -7,6 +7,8 @@ import Register from "../containers/Register";
 import Course from "../containers/Course";
 import Payment from "../containers/Payment";
 import Login from "../containers/Login";
+import Products from "../containers/Products";
+
 import PaymentsAfterLogin from "../containers/PaymentsAfterLogin";
 
 const index = () => {
@@ -18,6 +20,7 @@ const index = () => {
       <Route exact path="/payment" component={Payment} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/PaymentsAfterLogin" component={PaymentsAfterLogin} />
+      <Route exact path="/Products" component={Products} />
     </Switch>
   );
 };
