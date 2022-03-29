@@ -1,0 +1,38 @@
+export const data = [
+  {
+    id: "1",
+    upcomingDate: "Monday, 21 March, 2022",
+    course: "Qaidah/Tajweed",
+    startingDate: "19-Mar-2022",
+    payment: "$199",
+    validTill: "21-Apr-2022",
+    status: "pending",
+  },
+  {
+    id: "2",
+    upcomingDate: "Monday, 21 March, 2022",
+    course: "Qaidah/Tajweed",
+    startingDate: "19-Mar-2022",
+    payment: "$199",
+    validTill: "21-Apr-2022",
+    status: "paid",
+  },
+  {
+    id: "3",
+    upcomingDate: "Monday, 21 March, 2022",
+    course: "Qaidah/Tajweed",
+    startingDate: "19-Mar-2022",
+    payment: "$199",
+    validTill: "21-Apr-2022",
+    status: "paid",
+  },
+  {
+    id: "4",
+    upcomingDate: "Monday, 21 March, 2022",
+    course: "Qaidah/Tajweed",
+    startingDate: "19-Mar-2022",
+    payment: "$199",
+    validTill: "21-Apr-2022",
+    status: "paid",
+  },
+];
