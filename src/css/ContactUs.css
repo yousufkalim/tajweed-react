@@ -1,0 +1,25 @@
+.contactBox {
+  background: linear-gradient(
+    108.15deg,
+    #e3e3e3 11.66%,
+    rgba(227, 227, 227, 0) 62.34%
+  );
+  margin-top: 2%;
+  border-radius: 50px;
+  font-family: "CenturyGothic";
+  font-size: 16px;
+  text-align: left;
+}
+
+.second-col {
+  margin-top: 12%;
+}
+.contact-text {
+  margin-left: 6%;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 2%;
+}

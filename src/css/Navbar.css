@@ -51,6 +51,9 @@
 .nav-item:hover {
   color: #47b45f;
 }
+.nav-item:focus {
+  color: #47b45f;
+}
 .button {
   background-color: #47b45f;
   border-radius: 20px;

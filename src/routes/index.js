@@ -8,6 +8,8 @@ import Course from "../containers/Course";
 import Payment from "../containers/Payment";
 import Login from "../containers/Login";
 import Products from "../containers/Products";
+import About from "../containers/About";
+import ContactUs from "../containers/ContactUs";
 
 import PaymentsAfterLogin from "../containers/PaymentsAfterLogin";
 
@@ -21,6 +23,8 @@ const index = () => {
       <Route exact path="/login" component={Login} />
       <Route exact path="/PaymentsAfterLogin" component={PaymentsAfterLogin} />
       <Route exact path="/Products" component={Products} />
+      <Route exact path="/About" component={About} />
+      <Route exact path="/ContactUs" component={ContactUs} />
     </Switch>
   );
 };

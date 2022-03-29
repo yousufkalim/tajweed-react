@@ -10,6 +10,8 @@
 @import url("./OrderDetails.css");
 @import url("./PaymentsAfterLogin.css");
 @import url("./Products.css");
+@import url("./About.css");
+@import url("./ContactUs.css");
 
 @font-face {
   font-family: "CenturyGothic";
