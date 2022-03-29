@@ -1,0 +1,10 @@
+.char {
+  height: 1771px;
+  position: relative;
+  width: 56%;
+  border-radius: 0px;
+}
+.p-head {
+  color: #484848;
+  font-family: "GothicBold";
+}

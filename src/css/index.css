@@ -8,6 +8,7 @@
 @import url("./Register.css");
 @import url("./FormTopBar.css");
 @import url("./OrderDetails.css");
+@import url("./PaymentsAfterLogin.css");
 
 @font-face {
   font-family: "CenturyGothic";

@@ -1,7 +1,19 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Picture from "../assets/images/Picture.svg";
+import urdu from "../assets/images/urdu.svg";
 import TajweedMadeEasy from "../assets/images/TajweedMadeEasy.svg";
+import Tajweedurdu from "../assets/images/Tajweedurdu.svg";
+import simplifie from "../assets/images/simplifie.svg";
+import Tajweedsim from "../assets/images/Tajweedsim.svg";
+import TajweedLatin from "../assets/images/TajweedLatin.svg";
+import latin from "../assets/images/latin.svg";
+import arabic from "../assets/images/arabic.svg";
+import TajweedArabic from "../assets/images/TajweedArabic.svg";
+import Tajweedturkish from "../assets/images/Tajweedturkish.svg";
+import turkish from "../assets/images/turkish.svg";
+import releasing from "../assets/images/releasing.svg";
+import TajweedR from "../assets/images/TajweedR.svg";
 
 import { Col, Row, Button } from "reactstrap";
 
@@ -27,6 +39,11 @@ const Slider = () => {
   };
   return (
     <div className="slider">
+      <Row>
+        <h4 className=" sliderheading text-center">
+          Explore our Book in 7 different Languages
+        </h4>
+      </Row>
       <Carousel
         responsive={responsive}
         infinite={true}
@@ -37,11 +54,6 @@ const Slider = () => {
       >
         {/* {reviews.map((item) => ( */}
         <div className="s-container container">
-          <Row>
-            <h4 className=" sliderheading text-center">
-              Explore our Book in 7 different Languages
-            </h4>
-          </Row>
           <Row
             className="slider"
             style={{ height: "100%", backgroundColor: "inherit" }}
@@ -61,6 +73,138 @@ const Slider = () => {
               </p>
               <h1 className="price pb-3">$17</h1>
               <Button color="success" id="s-button" className="button">
+                Get Now
+              </Button>
+            </Col>
+          </Row>
+        </div>
+        <div className="s-container container">
+          <Row
+            className="slider"
+            style={{ height: "100%", backgroundColor: "inherit" }}
+          >
+            <Col lg="6" className=" c1 text-right">
+              <img src={urdu} className="image" alt="img" />
+            </Col>
+            <Col lg="6" className="c2">
+              <img src={Tajweedurdu} className="book" alt="Tajweedurdu" />
+              <p className="s-text text-left py-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's{" "}
+              </p>
+              <h1 className="price pb-3">$20</h1>
+              <Button color="success" id="s-button" className="button">
+                Get Now
+              </Button>
+            </Col>
+          </Row>
+        </div>
+        <div className="s-container container">
+          <Row
+            className="slider"
+            style={{ height: "100%", backgroundColor: "inherit" }}
+          >
+            <Col lg="6" className=" c1 text-right">
+              <img src={simplifie} className="image" alt="img" />
+            </Col>
+            <Col lg="6" className="c2">
+              <img src={Tajweedsim} className="book" alt="Tajweedurdu" />
+              <p className="s-text text-left py-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's{" "}
+              </p>
+              <h1 className="price pb-3">$20</h1>
+              <Button color="success" id="s-button" className="button">
+                Get Now
+              </Button>
+            </Col>
+          </Row>
+        </div>
+        <div className="s-container container">
+          <Row
+            className="slider"
+            style={{ height: "100%", backgroundColor: "inherit" }}
+          >
+            <Col lg="6" className=" c1 text-right">
+              <img src={latin} className="image" alt="img" />
+            </Col>
+            <Col lg="6" className="c2">
+              <img src={TajweedLatin} className="book" alt="Tajweedurdu" />
+              <p className="s-text text-left py-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's{" "}
+              </p>
+              <h1 className="price pb-3">$20</h1>
+              <Button color="success" id="s-button" className="button">
+                Get Now
+              </Button>
+            </Col>
+          </Row>
+        </div>
+        <div className="s-container container">
+          <Row
+            className="slider"
+            style={{ height: "100%", backgroundColor: "inherit" }}
+          >
+            <Col lg="6" className=" c1 text-right">
+              <img src={arabic} className="image" alt="img" />
+            </Col>
+            <Col lg="6" className="c2">
+              <img src={TajweedArabic} className="book" alt="TajweedArabic" />
+              <p className="s-text text-left py-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's{" "}
+              </p>
+              <h1 className="price pb-3">$20</h1>
+              <Button color="success" id="s-button" className="button">
+                Get Now
+              </Button>
+            </Col>
+          </Row>
+        </div>
+        <div className="s-container container">
+          <Row
+            className="slider"
+            style={{ height: "100%", backgroundColor: "inherit" }}
+          >
+            <Col lg="6" className=" c1 text-right">
+              <img src={turkish} className="image" alt="img" />
+            </Col>
+            <Col lg="6" className="c2">
+              <img src={Tajweedturkish} className="book" alt="Tajweedturkish" />
+              <p className="s-text text-left py-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's{" "}
+              </p>
+              <h1 className="price pb-3">$20</h1>
+              <Button color="success" id="s-button" className="button">
+                Get Now
+              </Button>
+            </Col>
+          </Row>
+        </div>
+        <div className="s-container container">
+          <Row
+            className="slider"
+            style={{ height: "100%", backgroundColor: "inherit" }}
+          >
+            <Col lg="6" className=" c1 text-right">
+              <img src={releasing} className="image" alt="img" />
+            </Col>
+            <Col lg="6" className="c2">
+              <img src={TajweedR} className="book" alt="TajweedR" />
+              <p className="s-text text-left py-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's{" "}
+              </p>
+              <h1 className="price pb-3">$00</h1>
+              <Button
+                color="secondary"
+                disabled
+                id="s-button"
+                className="button"
+                style={{ boxShadow: "none" }}
+              >
                 Get Now
               </Button>
             </Col>

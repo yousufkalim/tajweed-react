@@ -1,4 +1,5 @@
 import Logo from "../assets/images/Logo.svg";
+import { Link } from "react-router-dom";
 
 const FormTopBar = () => {
   return (
@@ -6,11 +7,17 @@ const FormTopBar = () => {
       {" "}
       <div>
         {" "}
-        <img src={Logo} alt="logo" />
+        <Link to="/">
+          {" "}
+          <img src={Logo} alt="logo" />{" "}
+        </Link>
       </div>
       <div>
         {" "}
-        <h6 className="img-txt text-white">Already Registered ? Login</h6>
+        <Link to="/Login">
+          {" "}
+          <h6 className="img-txt text-white">Already Registered ? Login</h6>
+        </Link>
       </div>
     </div>
   );

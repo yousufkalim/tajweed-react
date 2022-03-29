@@ -38,6 +38,8 @@
 #menu {
   display: flex;
   justify-content: space-between !important;
+  font-family: "GothicBold";
+  font-weight: 200;
 }
 
 .nav-item {

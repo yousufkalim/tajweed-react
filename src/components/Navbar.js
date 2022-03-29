@@ -9,7 +9,10 @@ const Navbar = () => {
       <div className="nav">
         <nav className="container navbar">
           <div className="logo">
-            <img src={Logo} alt="tajweed_logo" />
+            <Link to="/">
+              {" "}
+              <img src={Logo} alt="tajweed_logo" />
+            </Link>
           </div>
           <div>
             <ul id="menu" className="mt-3">
@@ -31,9 +34,12 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="btns">
-            <Button color="outline-success" className="button1">
-              Login
-            </Button>
+            <Link to="Login">
+              {" "}
+              <Button color="outline-success" className="button1">
+                Login
+              </Button>
+            </Link>
             <Link to="Register">
               <Button color="success" className="button">
                 Register
