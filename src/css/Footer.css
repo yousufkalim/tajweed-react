@@ -43,9 +43,9 @@
 }
 
 .link {
-  color: rgb(11, 39, 131);
+  color: rgb(22, 47, 129);
   text-decoration: none;
-  font-weight: 750;
+  font-family: "GothicBold";
 }
 
 .f-text h6 {
