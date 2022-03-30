@@ -21,7 +21,7 @@ const Products = () => {
     <>
       <Navbar />
       <Row>
-        <h4 className=" sliderheading text-center mt-4 pt-4">
+        <h4 className=" sliderheading text-center mt-4 pt-4" id="productHead">
           Explore our Book in 7 different Languages
         </h4>
       </Row>
@@ -32,12 +32,12 @@ const Products = () => {
           <div className="s-container container">
             <Row
               className="slider"
-              style={{ height: "100%", backgroundColor: "inherit" }}
+              style={{ height: "70%", backgroundColor: "inherit" }}
             >
-              <Col lg="6" className=" c1 text-right">
+              <Col lg="6" className=" c11 text-right">
                 <img src={Picture} className="productImage" alt="img" />
               </Col>
-              <Col lg="6" className="c2">
+              <Col lg="6" className="c22">
                 <img
                   src={TajweedMadeEasy}
                   className="bookText"
@@ -48,7 +48,7 @@ const Products = () => {
                   typesetting industry. Lorem Ipsum has been the industry's
                 </p>
                 <h1 className="productPrice pb-3">$17</h1>
-                <Button color="success" id="s-button" className="button">
+                <Button color="success" id="p-button" className="button">
                   Get Now
                 </Button>
               </Col>
@@ -59,17 +59,17 @@ const Products = () => {
               className="slider"
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
-              <Col lg="6" className=" c1 text-right">
+              <Col lg="6" className=" c11 text-right">
                 <img src={simplifie} className="productImage" alt="img" />
               </Col>
-              <Col lg="6" className="c2">
+              <Col lg="6" className="c22">
                 <img src={Tajweedsim} className="bookText" alt="Tajweedurdu" />
                 <p className="s-text text-left pt-4" id="productText">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's{" "}
                 </p>
                 <h1 className="productPrice pb-3">$20</h1>
-                <Button color="success" id="s-button" className="button">
+                <Button color="success" id="p-button" className="button">
                   Get Now
                 </Button>
               </Col>
@@ -80,10 +80,10 @@ const Products = () => {
               className="slider"
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
-              <Col lg="6" className=" c1 text-right">
-                <img src={arabic} className="productImage" alt="img" />
+              <Col lg="6" className=" c11 text-right">
+                <img src={arabic} className=" productImage" alt="img" />
               </Col>
-              <Col lg="6" className="c2">
+              <Col lg="6" className="c22">
                 <img
                   src={TajweedArabic}
                   className="bookText"
@@ -94,7 +94,7 @@ const Products = () => {
                   typesetting industry. Lorem Ipsum has been the industry's{" "}
                 </p>
                 <h1 className="productPrice pb-3">$20</h1>
-                <Button color="success" id="s-button" className="button">
+                <Button color="success" id="p-button" className="button">
                   Get Now
                 </Button>
               </Col>
@@ -105,10 +105,10 @@ const Products = () => {
               className="slider"
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
-              <Col lg="6" className=" c1 text-right">
+              <Col lg="6" className=" c11 text-right">
                 <img src={releasing} className="productImage" alt="img" />
               </Col>
-              <Col lg="6" className="c2">
+              <Col lg="6" className="c22">
                 <img src={TajweedR} className="bookText" alt="TajweedR" />
                 <p className="s-text text-left pt-4" id="productText">
                   Lorem Ipsum is simply dummy text of the printing and
@@ -118,7 +118,7 @@ const Products = () => {
                 <Button
                   color="secondary"
                   disabled
-                  id="s-button"
+                  id="p-button"
                   className="button"
                   style={{ boxShadow: "none" }}
                 >
@@ -135,17 +135,17 @@ const Products = () => {
               className="slider"
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
-              <Col lg="6" className=" c1 text-right">
+              <Col lg="6" className=" c11 text-right">
                 <img src={urdu} className="productImage" alt="img" />
               </Col>
-              <Col lg="6" className="c2">
+              <Col lg="6" className="c22">
                 <img src={Tajweedurdu} className="bookText" alt="Tajweedurdu" />
                 <p className="s-text text-left pt-4" id="productText">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's{" "}
                 </p>
                 <h1 className="productPrice pb-3">$20</h1>
-                <Button color="success" id="s-button" className="button">
+                <Button color="success" id="p-button" className="button">
                   Get Now
                 </Button>
               </Col>
@@ -156,13 +156,13 @@ const Products = () => {
               className="slider"
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
-              <Col lg="6" className=" c1 text-right">
-                <img src={latin} className="productImage" alt="img" />
+              <Col lg="6" className=" c11 text-right">
+                <img src={latin} className=" productImage" alt="img" />
               </Col>
-              <Col lg="6" className="c2">
+              <Col lg="6" className="c22">
                 <img
                   src={TajweedLatin}
-                  className="bookText"
+                  className=" bookText"
                   alt="Tajweedurdu"
                 />
                 <p className="s-text text-left pt-4" id="productText">
@@ -170,7 +170,7 @@ const Products = () => {
                   typesetting industry. Lorem Ipsum has been the industry's{" "}
                 </p>
                 <h1 className="productPrice pb-3">$20</h1>
-                <Button color="success" id="s-button" className="button">
+                <Button color="success" id="p-button" className="button">
                   Get Now
                 </Button>
               </Col>
@@ -181,21 +181,21 @@ const Products = () => {
               className="slider"
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
-              <Col lg="6" className=" c1 text-right">
+              <Col lg="6" className=" c11 text-right">
                 <img src={turkish} className="productImage" alt="img" />
               </Col>
-              <Col lg="6" className="c2">
+              <Col lg="6" className="c22">
                 <img
                   src={Tajweedturkish}
-                  className="bookText"
+                  className="mb-4 bookText"
                   alt="Tajweedturkish"
                 />
                 <p className="s-text text-left pt-4" id="productText">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's{" "}
                 </p>
-                <h1 className="productPrice pb-3">$20</h1>
-                <Button color="success" id="s-button" className="button">
+                <h1 className="productPrice pb-3 mb-4 ">$20</h1>
+                <Button color="success" id="p-button" className="button">
                   Get Now
                 </Button>
               </Col>

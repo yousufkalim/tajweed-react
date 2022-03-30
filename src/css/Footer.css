@@ -65,6 +65,9 @@
   color: #484848;
   margin-right: 40px;
 }
+.nav-item1:hover {
+  color: #47b45f;
+}
 
 @media only screen and (max-width: 600px) {
   .s1 {
@@ -88,7 +91,7 @@
   }
   .end {
     position: relative;
-    margin-left: 7%;
+    margin-left: 6%;
     margin-bottom: 0px;
   }
   .f-nav {
@@ -105,6 +108,7 @@
     list-style: none;
     padding-left: 0 !important ;
   }
+
   .up-arrow {
     display: none;
   }

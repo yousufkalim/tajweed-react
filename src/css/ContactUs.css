@@ -34,3 +34,49 @@
   margin-left: 5%;
   line-height: 40px;
 }
+
+@media only screen and (max-width: 600px) {
+  .second-col {
+    margin-bottom: 42%;
+    margin-left: 6%;
+    margin-top: 2%;
+  }
+  .contactBox {
+    height: 100vh;
+    margin-top: 3%;
+    margin: 1%;
+
+    font-family: "CenturyGothic";
+    font-size: 16px;
+    text-align: left;
+
+    position: relative;
+  }
+  .contact-text {
+    margin-left: 6%;
+    font-size: 12px;
+  }
+  .boxContent {
+    line-height: 22px;
+  }
+  .info {
+    line-height: 40px;
+    font-size: 11px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+  } */
+
+/* Medium devices (landscape tablets, 768px and up)
+  @media only screen and (min-width: 768px) {
+  } */
+
+/* Large devices (laptops/desktops, 992px and up)
+  @media only screen and (min-width: 992px) {
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+  }  */
