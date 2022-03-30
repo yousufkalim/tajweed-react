@@ -1,0 +1,27 @@
+.products {
+  margin-left: 5%;
+}
+.productImage {
+  height: 360px;
+  width: 90%;
+  position: relative;
+  left: 5%;
+  top: 0px;
+  border-radius: 20px;
+}
+.bookText {
+  width: 70%;
+  margin-top: 20%;
+}
+#productText {
+  font-size: 17px;
+  line-height: 23px;
+}
+.productPrice {
+  font-size: 55px;
+  font-family: "GothicBold";
+  line-height: 70px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #484848;
+}
