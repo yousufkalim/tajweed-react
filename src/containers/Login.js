@@ -14,12 +14,12 @@ const Login = () => {
   };
   return (
     <>
-      <div className="">
+      <div className="L_head">
         <Link to="/">
           {" "}
           <img
             src={Logo2}
-            className="p-4"
+            className="p-4 logo2"
             style={{ position: "relative", zIndex: "5" }}
             alt="Logo"
           />
@@ -30,7 +30,7 @@ const Login = () => {
         <Row style={{ marginLeft: "15%" }}>
           {" "}
           <Col lg="5"></Col>{" "}
-          <Col lg="7">
+          <Col lg="7" xs="10" sm="12">
             <h3
               className="form-head"
               style={{
