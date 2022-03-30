@@ -14,7 +14,7 @@ const Login = () => {
   };
   return (
     <>
-      <div className="L_head">
+      <div className="login_head">
         <Link to="/">
           {" "}
           <img
