@@ -35,11 +35,7 @@ const Footer = () => {
           <Col lg="3">
             <strong className="f-nav text-center">Navigate</strong>{" "}
             <div>
-              <ul
-                id="f-menu"
-                className="mt-4 p-4"
-                activeClassName="active-nav-item"
-              >
+              <ul id="f-menu" className="mt-4 p-4">
                 <li>
                   <Link to="/about" className="nav-item1">
                     About
