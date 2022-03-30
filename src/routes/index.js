@@ -26,7 +26,7 @@ const index = () => {
       <Route exact path="/Products" component={Products} />
       <Route exact path="/About" component={About} />
       <Route exact path="/ContactUs" component={ContactUs} />
-      <Route exact path="/PrivacyPolicy" component={PrivacyPolicy} />
+      <Route exact path="/privacy" component={PrivacyPolicy} />
     </Switch>
   );
 };
