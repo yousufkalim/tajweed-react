@@ -65,7 +65,9 @@
   color: #484848;
   margin-right: 40px;
 }
-
+.nav-item1:hover {
+  color: #47b45f;
+}
 @media only screen and (max-width: 600px) {
   .s1 {
   }
@@ -105,6 +107,7 @@
     list-style: none;
     padding-left: 0 !important ;
   }
+
   .up-arrow {
     display: none;
   }
