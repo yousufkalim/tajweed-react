@@ -5,16 +5,43 @@ import { useState } from "react";
 import FormTopBar from "../components/FormTopBar";
 import { Link } from "react-router-dom";
 import OrderDetails from "../components/OrderDetails";
-
+import api from "../api/index";
 const Payment = () => {
-  const [payment, setPayment] = useState({
-    userName: "",
-    cardNumber: "",
-    cvv: "",
-    expiryDate: "",
-  });
-  const handleInputChange = (e) => {
-    setPayment({ ...payment, [e.target.name]: e.target.value });
+  const checkout = async () => {
+    try {
+      let line_items = [
+        {
+          price_data: {
+            currency: "USD", // => Three-letter ISO currency code, in lowercase. Must be a supported currency.
+            product_data: {
+              name: "tajweed/quran", // => The product’s name, meant to be displayable to the customer
+            },
+            unit_amount: 133 * 100, // => A non-negative integer in cents representing how much to charge
+            // => MUST multiply by 100 as it is in cents
+          },
+          quantity: 1, // => The quantity of the line item being purchased.
+        },
+      ];
+      // => use a function to call the checkout api
+      getSessionUrl(line_items);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const getSessionUrl = async (line_items, transferData) => {
+    // => the backend api for checkout
+    api("post", "/student/checkout", {
+      line_items: line_items,
+    })
+      .then((res) => {
+        // => if status is success, get the session url and redirect user to the checkout page
+        // window.location = res.data.url;
+        console.log(res);
+      })
+      .catch((err) => {
+        // => handle errors if url invalid
+        console.log(err);
+      });
   };
 
   return (
@@ -32,116 +59,12 @@ const Payment = () => {
           Payment Details
         </h3>
         <Form>
-          <Row>
-            <Col lg="6">
-              <FormGroup>
-                <label className="form-control-label" htmlFor="input-username">
-                  Name on Card <span>{payment.userName ? "" : "*"}</span>
-                </label>
-                <Input
-                  className="form-control-alternative"
-                  id="input-username"
-                  required={true}
-                  placeholder="Daniel"
-                  type="text"
-                  value={payment.userName}
-                  name="userName"
-                  onChange={handleInputChange}
-                  style={{
-                    borderRadius: "20px",
-                    border: "1px solid black",
-                    marginBottom: "1%",
-                    marginTop: "2%",
-                    marginTop: "4px",
-                  }}
-                />
-              </FormGroup>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg="6">
-              <FormGroup>
-                <label
-                  className="form-control-label"
-                  htmlFor="input-cardnumber"
-                >
-                  Card number<span>{payment.cardNumber ? "" : "*"}</span>
-                </label>
-                <Input
-                  className="form-control-alternative"
-                  id="input-cardnumber"
-                  placeholder="1177 3344 3433 3443"
-                  type="text"
-                  value={payment.cardNumber}
-                  name="cardNumber"
-                  onChange={handleInputChange}
-                  style={{
-                    borderRadius: "20px",
-                    border: "1px solid black",
-                    marginBottom: "1%",
-                    marginTop: "2%",
-                  }}
-                />
-                {/* <img src={mastercard} alt="mastercard" /> */}
-              </FormGroup>
-            </Col>
-          </Row>
-
-          <Row>
-            <Col lg="3">
-              <FormGroup>
-                <label className="form-control-label" htmlFor="input-zoom">
-                  CVV<span>{payment.cvv ? "" : "*"}</span>
-                </label>
-                <Input
-                  className="form-control-alternative"
-                  id="input-zoom"
-                  placeholder="Write Code"
-                  type="text"
-                  value={payment.cvv}
-                  name="cvv"
-                  onChange={handleInputChange}
-                  style={{
-                    borderRadius: "20px",
-                    border: "1px solid black",
-                    marginBottom: "1%",
-                    marginTop: "2%",
-                  }}
-                />
-              </FormGroup>
-            </Col>
-
-            <Col lg="3">
-              <FormGroup>
-                <label
-                  className="form-control-label"
-                  htmlFor="input-expiryDate"
-                >
-                  Expiry Date <span>{payment.expiryDate ? "" : "*"}</span>
-                </label>
-                <Input
-                  className="form-control-alternative"
-                  id="input-expiryDate"
-                  type="date"
-                  value={payment.expiryDate}
-                  name="expiryDate"
-                  onChange={handleInputChange}
-                  style={{
-                    borderRadius: "20px",
-                    border: "1px solid black",
-                  }}
-                />
-              </FormGroup>
-            </Col>
-          </Row>
-
           <OrderDetails />
-          <Link to="Payment">
-            {" "}
-            <Button color="success" className="button my-4">
-              Pay
-            </Button>
-          </Link>
+          {/* <Link to="Payment"> */}{" "}
+          <Button color="success" className="button my-4" onClick={checkout}>
+            Pay
+          </Button>
+          {/* </Link> */}
         </Form>
       </div>
       <div className="">

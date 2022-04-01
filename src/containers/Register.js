@@ -1,14 +1,16 @@
 import RightSide from "../assets/images/RightSide.svg";
+import { toast } from "react-toastify";
 import { Row, Col, FormGroup, Form, Input, Label, Button } from "reactstrap";
 import { useState } from "react";
 import FormTopBar from "../components/FormTopBar";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Register = () => {
+  let history = useHistory();
   const [user, setUser] = useState({
     firstName: "",
     lastName: "",
-    gender: "",
+    gender: "male",
     age: "",
     city: "",
     state: "",
@@ -20,6 +22,38 @@ const Register = () => {
   const handleInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
+  const handleNext = () => {
+    if (user?.firstName === "") {
+      return toast.error("First Name is required");
+    }
+    if (user?.lastName === "") {
+      return toast.error("Last Name is required");
+    }
+    if (user?.age === "" || user?.age < 1) {
+      return toast.error("Enter valid Age");
+    }
+    if (user?.city === "") {
+      return toast.error("City is required");
+    }
+
+    if (user?.state === "") {
+      return toast.error("statee is required");
+    }
+    if (user?.country === "") {
+      return toast.error("country is required");
+    }
+    if (user?.email === "") {
+      return toast.error("email valid Age");
+    }
+    if (user?.password === "") {
+      return toast.error("password is required");
+    }
+    if (user?.phone === "") {
+      return toast.error("phone number is required");
+    }
+    history.push("/course", { params: user });
+  };
+
   return (
     <>
       <FormTopBar />
@@ -274,12 +308,11 @@ const Register = () => {
               </FormGroup>
             </Col>
           </Row>
-          <Link to="Course">
-            {" "}
-            <Button color="success" className="button my-4">
-              Next
-            </Button>
-          </Link>
+          {/* <Link to="Course"> */}
+          <Button color="success" className="button my-4" onClick={handleNext}>
+            Next
+          </Button>
+          {/* </Link> */}
         </Form>
       </div>
       <div className="">
