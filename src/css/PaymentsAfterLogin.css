@@ -1,0 +1,29 @@
+.char {
+  height: 1771px;
+  position: absolute;
+  width: 56%;
+  border-radius: 0px;
+  left: 55%;
+  top: 26%;
+}
+.p-head {
+  color: #484848;
+  font-family: "GothicBold";
+}
+.buttonR {
+  padding-right: 30px;
+  padding-left: 25px;
+  font-family: "GothicBold";
+
+  border-radius: 20px;
+  position: absolute;
+  left: 35%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #47b45f;
+  border-color: #47b45f;
+  font-weight: 100;
+}
+.Loginpayment {
+  font-family: "CenturyGothic";
+}

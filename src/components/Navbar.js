@@ -3,37 +3,55 @@ import { Button } from "reactstrap";
 import { NavLink, Link } from "react-router-dom";
 import Logo from "../assets/images/Logo.svg";
 
-const Navbar = () => {
+const Navbar = ({ about }) => {
   return (
     <div>
-      <div className="nav">
+      <div className={about ? "navAbout" : "nav"}>
         <nav className="container navbar">
           <div className="logo">
-            <img src={Logo} alt="tajweed_logo" />
+            <Link to="/">
+              {" "}
+              <img src={Logo} alt="tajweed_logo" />
+            </Link>
           </div>
           <div>
             <ul id="menu" className="mt-3">
               <li>
-                <NavLink to="/" className="nav-item">
+                <NavLink
+                  to="/About"
+                  className="nav-item"
+                  activeClassName="active-nav-item"
+                >
                   About
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/" className="nav-item">
+                <NavLink
+                  to="/ContactUs"
+                  className="nav-item"
+                  activeClassName="active-nav-item"
+                >
                   Contact us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/" className="nav-item">
+                <NavLink
+                  to="/Products"
+                  className="nav-item"
+                  activeClassName="active-nav-item"
+                >
                   Products
                 </NavLink>
               </li>
             </ul>
           </div>
           <div className="btns">
-            <Button color="outline-success" className="button1">
-              Login
-            </Button>
+            <Link to="Login">
+              {" "}
+              <Button color="outline-success" className="button1">
+                Login
+              </Button>
+            </Link>
             <Link to="Register">
               <Button color="success" className="button">
                 Register

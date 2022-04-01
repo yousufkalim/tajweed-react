@@ -315,7 +315,7 @@ const Register = () => {
           {/* </Link> */}
         </Form>
       </div>
-      <div className="">
+      <div>
         <img src={RightSide} className="r-vector" alt="" />
       </div>
     </>
