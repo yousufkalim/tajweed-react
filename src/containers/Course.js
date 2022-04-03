@@ -20,7 +20,7 @@ const Course = () => {
     country: user?.country,
     email: user?.email,
     password: user?.password,
-    phone: user?.phone,
+    whatsapp_number: user?.whatsapp_number,
     father_name: "",
     mother_name: "",
     zoom_id: "",
@@ -62,10 +62,11 @@ const Course = () => {
     if (course?.course_name === "") {
       return toast.error("courseName is required");
     }
+
     api("post", "/student", course)
       .then((res) => {
         toast.success("Successfully Registered");
-        history.push("/payment");
+        history.push("/login");
       })
       .catch((err) => {
         toast.error(err?.response);

@@ -17,7 +17,7 @@ const Register = () => {
     country: "",
     email: "",
     password: "",
-    phone: "",
+    whatsapp_number: "",
   });
   const handleInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -48,9 +48,10 @@ const Register = () => {
     if (user?.password === "") {
       return toast.error("password is required");
     }
-    if (user?.phone === "") {
-      return toast.error("phone number is required");
+    if (user?.whatsapp_number === "") {
+      return toast.error("Whatsapp number is required");
     }
+
     history.push("/course", { params: user });
   };
 
@@ -241,16 +242,19 @@ const Register = () => {
             </Col>
             <Col lg="3">
               <FormGroup>
-                <label className="form-control-label" htmlFor="input-phone">
-                  WhatsApp Number <span>{user.phone ? "" : "*"}</span>
+                <label
+                  className="form-control-label"
+                  htmlFor="input-whatsapp_number"
+                >
+                  WhatsApp Number <span>{user.whatsapp_number ? "" : "*"}</span>
                 </label>
                 <Input
                   className="form-control-alternative"
-                  id="input-phone"
+                  id="input-whatsapp_number"
                   placeholder="+92 311 1234567"
                   type="text"
-                  value={user.phone}
-                  name="phone"
+                  value={user.whatsapp_number}
+                  name="whatsapp_number"
                   onChange={handleInputChange}
                   style={{
                     borderRadius: "20px",
