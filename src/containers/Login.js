@@ -101,7 +101,11 @@ const Login = () => {
               </Row>
             </Form>
             <h6 className="login-end">
-              Want to Register as a<strong> Regular Student </strong>?
+              Want to Register as a{" "}
+              <Link to="/register">
+                <strong>Regular Student</strong>
+              </Link>
+              ?
             </h6>
           </Col>
         </Row>

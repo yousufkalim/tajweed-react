@@ -2,6 +2,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import Vector from "../assets/images/Vector.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -13,9 +14,11 @@ const Header = () => {
           </h1>{" "}
           <span className="tajweed_text">Tajweed.</span>
           <h6 className="h-text mt-4">Register as a Regular Student</h6>
-          <Button color="outline-success" className="button1 py-2 ">
-            Get Started
-          </Button>
+          <Link to="/register">
+            <Button color="outline-success" className="button1 py-2 ">
+              Get Started
+            </Button>
+          </Link>
         </Col>
         <Col lg="6">
           <img src={Vector} className="header-image" alt="Vector" />

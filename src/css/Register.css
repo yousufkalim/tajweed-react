@@ -32,6 +32,11 @@
   text-align: right;
   margin-right: 17%;
 }
+
+.login-end a {
+  text-decoration: none;
+}
+
 Label {
   font-family: "GothicBold";
 }
