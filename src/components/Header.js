@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <Container>
+    <Container style={{ zIndex: "4" }}>
       <Row className="header">
         <Col lg="6" className="header-content">
           <h1 className="head-text">

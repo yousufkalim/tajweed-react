@@ -29,8 +29,6 @@ function App() {
         token,
         loggedIn: true,
       });
-    } else {
-      window.location = "/login";
     }
   }, [pathname]);
 

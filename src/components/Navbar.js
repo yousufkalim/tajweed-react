@@ -1,9 +1,24 @@
 import React from "react";
-import { Button } from "reactstrap";
+import {
+  Button,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  DropdownToggle,
+  Media,
+} from "reactstrap";
 import { NavLink, Link } from "react-router-dom";
+import { Store } from "../StoreContext";
 import Logo from "../assets/images/Logo.svg";
 
 const Navbar = ({ about }) => {
+  const { user, loggedIn } = Store();
+
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    localStorage.removeItem("token");
+    window.location = "/";
+  };
   return (
     <div>
       <div className={about ? "navAbout" : "nav"}>
@@ -45,19 +60,54 @@ const Navbar = ({ about }) => {
               </li>
             </ul>
           </div>
-          <div className="btns">
-            <Link to="Login">
-              {" "}
-              <Button color="outline-success" className="button1">
-                Login
-              </Button>
-            </Link>
-            <Link to="Register">
-              <Button color="success" className="button">
-                Register
-              </Button>
-            </Link>
-          </div>
+          {loggedIn ? (
+            <UncontrolledDropdown nav>
+              <DropdownToggle className="pr-0" nav>
+                <Media className="align-items-center">
+                  <Media className="ml-2 d-none d-lg-block">
+                    <span
+                      className="mb-0 text-sm font-weight-bold"
+                      style={{ color: "#47b45f" }}
+                    >
+                      {user.first_name} {user.last_name}
+                    </span>
+                  </Media>
+                </Media>
+              </DropdownToggle>
+              <DropdownMenu
+                className="dropdown-menu-arrow"
+                style={{ zIndex: "10" }}
+                right
+              >
+                <DropdownItem style={{ color: "#47b45f" }}>
+                  <span>
+                    {user.first_name} {user.last_name}
+                    <br />
+                    {user.email}
+                  </span>
+                </DropdownItem>
+
+                <DropdownItem divider />
+                <DropdownItem onClick={handleLogout}>
+                  <span>Logout</span>
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          ) : (
+            <div className="btns">
+              <Link to="Login">
+                {" "}
+                <Button color="outline-success" className="button1">
+                  Login
+                </Button>
+              </Link>
+              <Link to="Register">
+                <Button color="success" className="button">
+                  Register
+                </Button>
+              </Link>
+            </div>
+          )}
         </nav>
       </div>
     </div>
