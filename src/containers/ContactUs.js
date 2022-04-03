@@ -7,6 +7,8 @@ import Email from "../assets/images/Email.svg";
 import { useState } from "react";
 import { Row, Col, FormGroup, Form, Input, Label, Button } from "reactstrap";
 import { Link } from "react-router-dom";
+import api from "../api/index";
+import { toast } from "react-toastify";
 
 const ContactUs = () => {
   const [user, setUser] = useState({
@@ -14,9 +16,23 @@ const ContactUs = () => {
     name: "",
     message: "",
   });
+
   const handleInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    await api("post", "/contacts", user);
+    setUser({
+      email: "",
+      name: "",
+      message: "",
+    });
+    toast.success("We have received your message");
+  };
+
   return (
     <>
       <Navbar about={false} />
@@ -52,10 +68,10 @@ const ContactUs = () => {
             </Col>
 
             <Col lg="6" className="second-col">
-              <Form>
+              <Form onSubmit={handleSubmit}>
                 <FormGroup>
                   <label className="form-control-label" htmlFor="input-name">
-                    Full Name <span>{user.name ? "" : "*"}</span>
+                    Full Name *
                   </label>
                   <Input
                     className="form-control-alternative"
@@ -74,7 +90,7 @@ const ContactUs = () => {
                 </FormGroup>{" "}
                 <FormGroup>
                   <label className="form-control-label" htmlFor="input-email">
-                    Email Address <span>{user.email ? "" : "*"}</span>
+                    Email Address *
                   </label>
                   <Input
                     className="form-control-alternative"
@@ -93,15 +109,15 @@ const ContactUs = () => {
                 </FormGroup>
                 <FormGroup>
                   <label className="form-control-label" htmlFor="input-name">
-                    Message <span>{user.name ? "" : "*"}</span>
+                    Message *
                   </label>
                   <Input
                     className="form-control-alternative"
                     id="input-name"
                     placeholder="Type something"
                     type="textarea"
-                    value={user.name}
-                    name="name"
+                    value={user.message}
+                    name="message"
                     onChange={handleInputChange}
                     style={{
                       borderRadius: "20px",
@@ -111,12 +127,9 @@ const ContactUs = () => {
                     }}
                   />
                 </FormGroup>
-                <Link to="/">
-                  {" "}
-                  <Button color="success" className="button my-4">
-                    Send Message
-                  </Button>
-                </Link>
+                <Button color="success" className="button my-4" type="submit">
+                  Send Message
+                </Button>
               </Form>
             </Col>
           </Row>
