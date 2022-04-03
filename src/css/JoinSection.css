@@ -38,6 +38,7 @@ strong {
   position: relative;
   height: 833px;
   width: 100%;
+  object-fit: contain;
   /* left: 1028px;
   top: 2489px; */
   border-radius: 0px;

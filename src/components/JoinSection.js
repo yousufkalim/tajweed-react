@@ -1,5 +1,5 @@
 import { Row, Col } from "reactstrap";
-import Boxes from "../assets/images/Boxes.svg";
+import Boxes from "../assets/images/Boxes.png";
 import Table from "../assets/images/Table.svg";
 import Google from "../assets/images/Google.svg";
 import Apple from "../assets/images/Apple.svg";
