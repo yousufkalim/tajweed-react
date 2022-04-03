@@ -12,7 +12,9 @@ const api = async (method = "get", uri, body) => {
         if (err?.response?.status === 403) {
           window.location = "/login";
         } else {
-          toast.error(err?.response?.data ? err.response.data : err?.message);
+          toast.error(
+            err?.response?.data ? err.response.data.message : err?.message
+          );
           reject(err);
         }
       });
