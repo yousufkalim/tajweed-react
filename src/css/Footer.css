@@ -76,8 +76,10 @@
   .f-text {
     display: none;
   }
+  
   .icons {
-    text-align: right;
+    text-align: center;
+   margin-left: 0 !important;
   }
   .footer {
     height: 560px;
