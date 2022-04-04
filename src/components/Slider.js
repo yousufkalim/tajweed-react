@@ -70,7 +70,7 @@ const Slider = () => {
                 alt="TajweedMadeEasy"
               />
               <p className="s-text text-left py-4" title={descriptions.english}>
-                {descriptions.english.substring(0, 130)}...
+                {descriptions.english.substring(0, 128)}...
               </p>
               <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
@@ -114,7 +114,7 @@ const Slider = () => {
             <Col lg="6" className="c2">
               <img src={Tajweedsim} className="book" alt="Tajweedurdu" />
               <p className="s-text text-left py-4" title={descriptions.french}>
-               {descriptions.french.substring(0,120)}...
+               {descriptions.french.substring(0,117)}...
               </p>
               <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
@@ -158,7 +158,7 @@ const Slider = () => {
             <Col lg="6" className="c2">
               <img src={TajweedArabic} className="book" alt="TajweedArabic" />
               <p className="s-text text-left py-4" title={descriptions.malay}>
-                {descriptions.malay.substring(0,130)}...
+                {descriptions.malay.substring(0,126)}...
               </p>
               <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
@@ -179,9 +179,8 @@ const Slider = () => {
             </Col>
             <Col lg="6" className="c2">
               <img src={Tajweedturkish} className="book" alt="Tajweedturkish" />
-              <p className="s-text text-left py-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's{" "}
+              <p className="s-text text-left py-4" title={descriptions.tamil}>
+                {descriptions.tamil.substring(0,130)}...
               </p>
               <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">

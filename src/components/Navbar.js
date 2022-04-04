@@ -51,15 +51,6 @@ const Navbar = ({ about }) => {
               </li>
               <li>
                 <NavLink
-                  to="/PaymentsAfterLogin"
-                  className="nav-item"
-                  activeClassName="active-nav-item"
-                >
-                  Payment Records
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
                   to="/Products"
                   className="nav-item"
                   activeClassName="active-nav-item"
