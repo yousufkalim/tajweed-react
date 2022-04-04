@@ -74,7 +74,7 @@ const Register = () => {
             <Col lg="3">
               <FormGroup>
                 <label className="form-control-label" htmlFor="input-fname">
-                  First Name <span>{user.firstName ? "" : "*"}</span>
+                  First Name *
                 </label>
                 <Input
                   className="form-control-alternative"
@@ -98,7 +98,7 @@ const Register = () => {
             <Col lg="3">
               <FormGroup>
                 <label className="form-control-label" htmlFor="input-lname">
-                  Last Name <span>{user.lastName ? "" : "*"}</span>
+                  Last Name *
                 </label>
                 <Input
                   className="form-control-alternative"
@@ -122,7 +122,7 @@ const Register = () => {
             <Col lg="3">
               <FormGroup>
                 <Label for="exampleSelect" className="form-control-label">
-                  Select Gender <span>{user.gender ? "" : "*"}</span>
+                  Select Gender *
                 </Label>
                 <Input
                   id="exampleSelect"
@@ -149,7 +149,7 @@ const Register = () => {
             <Col lg="3">
               <FormGroup>
                 <label className="form-control-label" htmlFor="input-email">
-                  Age <span>{user.age ? "" : "*"}</span>
+                  Age *
                 </label>
                 <Input
                   className="form-control-alternative"
@@ -173,13 +173,13 @@ const Register = () => {
             <Col lg="3">
               <FormGroup>
                 <label className="form-control-label" htmlFor="input-city">
-                  City <span>{user.city ? "" : "*"}</span>
+                  City *
                 </label>
                 <Input
                   className="form-control-alternative"
                   id="input-city"
                   required={true}
-                  placeholder="Lahore"
+                  placeholder="Ottawa"
                   type="text"
                   value={user.city}
                   name="city"
@@ -196,12 +196,12 @@ const Register = () => {
             <Col lg="3">
               <FormGroup>
                 <label className="form-control-label" htmlFor="input-state">
-                  State/Province <span>{user.state ? "" : "*"}</span>
+                  State/Province *
                 </label>
                 <Input
                   className="form-control-alternative"
                   id="input-state"
-                  placeholder="Punjab"
+                  placeholder="Alberta"
                   type="text"
                   value={user.state}
                   name="state"
@@ -221,12 +221,12 @@ const Register = () => {
             <Col lg="3">
               <FormGroup>
                 <label className="form-control-label" htmlFor="input-country">
-                  Country <span>{user.country ? "" : "*"}</span>
+                  Country *
                 </label>
                 <Input
                   className="form-control-alternative"
                   id="input-country"
-                  placeholder="Pakistan"
+                  placeholder="Canada"
                   type="text"
                   value={user.country}
                   name="country"
@@ -246,7 +246,7 @@ const Register = () => {
                   className="form-control-label"
                   htmlFor="input-whatsapp_number"
                 >
-                  WhatsApp Number <span>{user.whatsapp_number ? "" : "*"}</span>
+                  WhatsApp Number *
                 </label>
                 <Input
                   className="form-control-alternative"
@@ -270,7 +270,7 @@ const Register = () => {
             <Col lg="3">
               <FormGroup>
                 <label className="form-control-label" htmlFor="input-email">
-                  Email Address <span>{user.email ? "" : "*"}</span>
+                  Email Address *
                 </label>
                 <Input
                   className="form-control-alternative"
@@ -292,7 +292,7 @@ const Register = () => {
             <Col lg="3">
               <FormGroup>
                 <label className="form-control-label" htmlFor="input-password">
-                  Password <span>{user.password ? "" : "*"}</span>
+                  Password *
                 </label>
                 <Input
                   className="form-control-alternative"

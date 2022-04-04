@@ -31,33 +31,14 @@ const Course = () => {
     father_phone_number: "",
     mother_phone_number: "",
   });
+
   const handleInputChange = (e) => {
     setCourse({ ...course, [e.target.name]: e.target.value });
   };
+
   const handleSubmit = () => {
-    if (course?.father_name === "") {
-      return toast.error("Father's Name is required");
-    }
-    if (course?.mother_name === "") {
-      return toast.error("Father's Name is required");
-    }
-    if (course?.father_phone_number === "") {
-      return toast.error("Father's Phone is required");
-    }
-    if (course?.mother_phone_number === "") {
-      return toast.error("Mother's Phone  is required");
-    }
-    if (course?.zoom_id === "") {
-      return toast.error("zoomID is required");
-    }
     if (course?.language === "") {
       return toast.error("language is required");
-    }
-    if (course?.skype_id === "") {
-      return toast.error("Skype Id is required");
-    }
-    if (course?.start_date === "") {
-      return toast.error("startDate is required");
     }
     if (course?.course_name === "") {
       return toast.error("courseName is required");
@@ -90,7 +71,7 @@ const Course = () => {
             <Col lg="3">
               <FormGroup>
                 <label className="form-control-label" htmlFor="input-fname">
-                  Father Name <span>{course.father_name ? "" : "*"}</span>
+                  Father Name
                 </label>
                 <Input
                   className="form-control-alternative"
@@ -118,8 +99,7 @@ const Course = () => {
                   className="form-control-label"
                   htmlFor="input-fatherPhone"
                 >
-                  Father’s Phone Number{" "}
-                  <span>{course.father_phone_number ? "" : "*"}</span>
+                  Father’s Phone Number
                 </label>
                 <Input
                   className="form-control-alternative"
@@ -143,7 +123,7 @@ const Course = () => {
             <Col lg="3">
               <FormGroup>
                 <label className="form-control-label" htmlFor="input-mname">
-                  Mother Name<span>{course.mother_name ? "" : "*"}</span>
+                  Mother Name
                 </label>
                 <Input
                   className="form-control-alternative"
@@ -168,8 +148,7 @@ const Course = () => {
                   className="form-control-label"
                   htmlFor="input-motherphone"
                 >
-                  Mother Phone Number{" "}
-                  <span>{course.mother_phone_number ? "" : "*"}</span>
+                  Mother Phone Number
                 </label>
                 <Input
                   className="form-control-alternative"
@@ -193,7 +172,7 @@ const Course = () => {
             <Col lg="6">
               <FormGroup>
                 <Label for="exampleSelect" className="form-control-label">
-                  Select Course <span>{course.course_name ? "" : "*"}</span>
+                  Select Course *
                 </Label>
                 <Input
                   id="exampleSelect"
@@ -218,7 +197,7 @@ const Course = () => {
             <Col lg="3">
               <FormGroup>
                 <label className="form-control-label" htmlFor="input-startDate">
-                  Start Date <span>{course.start_date ? "" : "*"}</span>
+                  Start Date
                 </label>
                 <Input
                   className="form-control-alternative"
@@ -240,7 +219,7 @@ const Course = () => {
             <Col lg="3">
               <FormGroup>
                 <Label for="exampleSelect" className="form-control-label">
-                  Preferred Language <span>{course.language ? "" : "*"}</span>
+                  Preferred Language *
                 </Label>
                 <Input
                   id="exampleSelect"
@@ -267,7 +246,7 @@ const Course = () => {
               <Col lg="3">
                 <FormGroup>
                   <label className="form-control-label" htmlFor="input-skype">
-                    Skype ID <span>{course.skype_id ? "" : "*"}</span>
+                    Skype ID
                   </label>
                   <Input
                     className="form-control-alternative"
@@ -289,7 +268,7 @@ const Course = () => {
               <Col lg="3">
                 <FormGroup>
                   <label className="form-control-label" htmlFor="input-zoom">
-                    Zoom ID<span>{course.zoom_id ? "" : "*"}</span>
+                    Zoom ID
                   </label>
                   <Input
                     className="form-control-alternative"
