@@ -50,6 +50,7 @@ const Slider = () => {
         arrows={true}
         autoPlay={true}
         showDots={true}
+        dotListClass="sliderDots"
         className="CustomerreviewCarousel"
       >
         {/* {reviews.map((item) => ( */}

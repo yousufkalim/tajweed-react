@@ -22,13 +22,13 @@ const Footer = () => {
                 <img src={Logo} width="50%" alt="tajweed_logo" />
               </Link>
             </div>
-            <div className="icons text-center">
+            <div className="icons" style={{ marginLeft: "28%" }}>
               <img src={Facebook} alt="tajweed_logo" />
               <img src={instagram} alt="tajweed_logo" />
               <img src={youtube} alt="tajweed_logo" />
             </div>
             <div className="f-text pb-3">
-              <h6 style={{ marginLeft: "34%" }}>Terms & Conditions</h6>
+              <h6 style={{ marginLeft: "28%" }}>Terms & Conditions</h6>
               <h6>Privacy Policy</h6>
             </div>
           </Col>

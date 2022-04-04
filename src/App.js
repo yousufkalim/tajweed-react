@@ -1,6 +1,9 @@
 // Init
-import React from "react";
+import React, { useEffect } from "react";
 import { ToastContainer, Flip } from "react-toastify";
+import { UpdateStore } from "./StoreContext";
+import { useLocation } from "react-router-dom";
+
 import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
@@ -12,6 +15,23 @@ import Index from "./routes/index";
 import "./css/index.css";
 // Component
 function App() {
+  const updateStore = UpdateStore();
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    let user = localStorage.getItem("user");
+    let token = localStorage.getItem("token");
+
+    if (user && token) {
+      user = JSON.parse(user);
+      updateStore({
+        user,
+        token,
+        loggedIn: true,
+      });
+    }
+  }, [pathname]);
+
   return (
     <div className="App">
       <ToastContainer

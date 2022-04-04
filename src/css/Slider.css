@@ -65,6 +65,10 @@
   margin-bottom: 7%;
 }
 
+.sliderDots li button {
+  border: none;
+}
+
 @media only screen and (max-width: 600px) {
   .slider {
     width: 100%;

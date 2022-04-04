@@ -18,11 +18,16 @@ strong {
 }
 .box-content {
   margin-top: 13%;
-  margin-left: 5%;
+  margin-left: 10%;
+  width: 105% !important;
 }
 .box-buttons {
-  margin-left: 5%;
+  margin-left: 10%;
   margin-bottom: 15%;
+}
+
+.box-buttons .img1 {
+  padding-left: 0 !important;
 }
 
 .table-image {
@@ -38,6 +43,7 @@ strong {
   position: relative;
   height: 833px;
   width: 100%;
+  object-fit: contain;
   /* left: 1028px;
   top: 2489px; */
   border-radius: 0px;
@@ -53,7 +59,7 @@ strong {
   }
   .box-content {
     font-size: 20px;
-
+    width: 100% !important;
     text-align: left;
   }
   .box-buttons {
