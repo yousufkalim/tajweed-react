@@ -91,9 +91,8 @@ const Slider = () => {
             </Col>
             <Col lg="6" className="c2">
               <img src={Tajweedurdu} className="book" alt="Tajweedurdu" />
-              <p className="s-text text-left py-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's{" "}
+              <p className="s-text text-left py-4" title={descriptions.urdu}>
+                {descriptions.urdu.substring(0,150)}...
               </p>
               <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
@@ -114,9 +113,8 @@ const Slider = () => {
             </Col>
             <Col lg="6" className="c2">
               <img src={Tajweedsim} className="book" alt="Tajweedurdu" />
-              <p className="s-text text-left py-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's{" "}
+              <p className="s-text text-left py-4" title={descriptions.french}>
+               {descriptions.french.substring(0,120)}...
               </p>
               <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
@@ -137,9 +135,8 @@ const Slider = () => {
             </Col>
             <Col lg="6" className="c2">
               <img src={TajweedLatin} className="book" alt="Tajweedurdu" />
-              <p className="s-text text-left py-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's{" "}
+              <p className="s-text text-left py-4" title={descriptions.russian}>
+                {descriptions.russian.substring(0,150)}....
               </p>
               <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
@@ -160,9 +157,8 @@ const Slider = () => {
             </Col>
             <Col lg="6" className="c2">
               <img src={TajweedArabic} className="book" alt="TajweedArabic" />
-              <p className="s-text text-left py-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's{" "}
+              <p className="s-text text-left py-4" title={descriptions.malay}>
+                {descriptions.malay.substring(0,130)}...
               </p>
               <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
