@@ -15,6 +15,7 @@ import turkish from "../assets/images/turkish.svg";
 import releasing from "../assets/images/releasing.svg";
 import TajweedR from "../assets/images/TajweedR.svg";
 import { Row, Col, Button } from "reactstrap";
+import { descriptions } from "../utils/descriptions";
 
 const Products = () => {
   return (
@@ -43,10 +44,11 @@ const Products = () => {
                   className="bookText"
                   alt="TajweedMadeEasy"
                 />
-                <p className="s-text text-left pt-4" id="productText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
+      
+                <p className="s-text text-left pt-4" id="productText" title={descriptions.english}>
+                {descriptions.english.substring(0, 127)}...
                 </p>
+
                 <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
                   <Button color="success" id="s-button" className="button">
@@ -66,9 +68,8 @@ const Products = () => {
               </Col>
               <Col lg="6" className="c22">
                 <img src={Tajweedsim} className="bookText" alt="Tajweedurdu" />
-                <p className="s-text text-left pt-4" id="productText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's{" "}
+                <p className="s-text text-left pt-4" id="productText" title={descriptions.french}>
+                 {descriptions.french.substring(0,89)}...
                 </p>
                 <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
@@ -93,9 +94,8 @@ const Products = () => {
                   className="bookText"
                   alt="TajweedArabic"
                 />
-                <p className="s-text text-left pt-4" id="productText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's{" "}
+                <p className="s-text text-left pt-4" id="productText" title={descriptions.malay}>
+                 {descriptions.malay.substring(0,90)}...
                 </p>
                 <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
@@ -146,9 +146,8 @@ const Products = () => {
               </Col>
               <Col lg="6" className="c22">
                 <img src={Tajweedurdu} className="bookText" alt="Tajweedurdu" />
-                <p className="s-text text-left pt-4" id="productText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's{" "}
+                <p className="s-text text-left pt-4" id="productText" title={descriptions.urdu}>
+                   {descriptions.urdu.substring(0,159)}{"...."}
                 </p>
                 <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
@@ -173,9 +172,8 @@ const Products = () => {
                   className=" bookText"
                   alt="Tajweedurdu"
                 />
-                <p className="s-text text-left pt-4" id="productText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's{" "}
+                <p className="s-text text-left pt-4" id="productText" title={descriptions.russian}>
+                  {descriptions.russian.substring(0,100)}...
                 </p>
                 <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
@@ -200,9 +198,8 @@ const Products = () => {
                   className="mb-4 bookText"
                   alt="Tajweedturkish"
                 />
-                <p className="s-text text-left pt-4" id="productText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's{" "}
+                <p className="s-text text-left pt-4" id="productText" title ={descriptions.tamil}>
+                 {descriptions.tamil.substring(0,90)}...
                 </p>
                 <h1 className="productPrice pb-3 mb-4 ">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
