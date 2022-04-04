@@ -14,6 +14,7 @@ import Tajweedturkish from "../assets/images/Tajweedturkish.svg";
 import turkish from "../assets/images/turkish.svg";
 import releasing from "../assets/images/releasing.svg";
 import TajweedR from "../assets/images/TajweedR.svg";
+import { descriptions } from "../utils/descriptions";
 
 import { Col, Row, Button } from "reactstrap";
 
@@ -68,9 +69,8 @@ const Slider = () => {
                 className="book"
                 alt="TajweedMadeEasy"
               />
-              <p className="s-text text-left py-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's{" "}
+              <p className="s-text text-left py-4" title={descriptions.english}>
+                {descriptions.english.substring(0, 130)}...
               </p>
               <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
