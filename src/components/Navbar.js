@@ -64,7 +64,7 @@ const Navbar = ({ about }) => {
             <UncontrolledDropdown nav>
               <DropdownToggle className="pr-0" nav>
                 <Media className="align-items-center">
-                  <Media className="ml-2 d-none d-lg-block">
+                  <Media className="ml-2 d-lg-block">
                     <span
                       className="mb-0 text-sm font-weight-bold"
                       style={{ color: "#47b45f" }}
