@@ -72,10 +72,12 @@ const Slider = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's{" "}
               </p>
-              <h1 className="price pb-3">$17</h1>
-              <Button color="success" id="s-button" className="button">
-                Get Now
-              </Button>
+              <h1 className="price pb-3">$5</h1>
+              <a href="http://www.darussalamcanada.com" target="_blank">
+                <Button color="success" id="s-button" className="button">
+                  Order Now
+                </Button>
+              </a>
             </Col>
           </Row>
         </div>
@@ -93,10 +95,12 @@ const Slider = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's{" "}
               </p>
-              <h1 className="price pb-3">$20</h1>
-              <Button color="success" id="s-button" className="button">
-                Get Now
-              </Button>
+              <h1 className="price pb-3">$5</h1>
+              <a href="http://www.darussalamcanada.com" target="_blank">
+                <Button color="success" id="s-button" className="button">
+                  Order Now
+                </Button>
+              </a>
             </Col>
           </Row>
         </div>
@@ -114,10 +118,12 @@ const Slider = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's{" "}
               </p>
-              <h1 className="price pb-3">$20</h1>
-              <Button color="success" id="s-button" className="button">
-                Get Now
-              </Button>
+              <h1 className="price pb-3">$5</h1>
+              <a href="http://www.darussalamcanada.com" target="_blank">
+                <Button color="success" id="s-button" className="button">
+                  Order Now
+                </Button>
+              </a>
             </Col>
           </Row>
         </div>
@@ -135,10 +141,12 @@ const Slider = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's{" "}
               </p>
-              <h1 className="price pb-3">$20</h1>
-              <Button color="success" id="s-button" className="button">
-                Get Now
-              </Button>
+              <h1 className="price pb-3">$5</h1>
+              <a href="http://www.darussalamcanada.com" target="_blank">
+                <Button color="success" id="s-button" className="button">
+                  Order Now
+                </Button>
+              </a>
             </Col>
           </Row>
         </div>
@@ -156,10 +164,12 @@ const Slider = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's{" "}
               </p>
-              <h1 className="price pb-3">$20</h1>
-              <Button color="success" id="s-button" className="button">
-                Get Now
-              </Button>
+              <h1 className="price pb-3">$5</h1>
+              <a href="http://www.darussalamcanada.com" target="_blank">
+                <Button color="success" id="s-button" className="button">
+                  Order Now
+                </Button>
+              </a>
             </Col>
           </Row>
         </div>
@@ -177,10 +187,12 @@ const Slider = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's{" "}
               </p>
-              <h1 className="price pb-3">$20</h1>
-              <Button color="success" id="s-button" className="button">
-                Get Now
-              </Button>
+              <h1 className="price pb-3">$5</h1>
+              <a href="http://www.darussalamcanada.com" target="_blank">
+                <Button color="success" id="s-button" className="button">
+                  Order Now
+                </Button>
+              </a>
             </Col>
           </Row>
         </div>
@@ -206,7 +218,7 @@ const Slider = () => {
                 className="button"
                 style={{ boxShadow: "none" }}
               >
-                Get Now
+                Order Now
               </Button>
             </Col>
           </Row>
