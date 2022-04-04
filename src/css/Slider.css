@@ -65,6 +65,11 @@
   margin-bottom: 7%;
 }
 
+.sliderDots {
+  bottom: 40px !important;
+
+}
+
 .sliderDots li button {
   border: none;
 }
