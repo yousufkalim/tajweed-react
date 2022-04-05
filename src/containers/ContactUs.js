@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Table from "../assets/images/Table.svg";
-import Icon from "../assets/images/Icon.svg";
+import Icon from "../assets/images/ICON.svg";
 import Email from "../assets/images/Email.svg";
 
 import { useState } from "react";
@@ -40,7 +40,7 @@ const ContactUs = () => {
         <div className="container contactBox">
           <Row>
             <Col lg="6">
-              <h1 className="boxContent">Get a quote</h1>
+              <h1 className="boxContent">Ask for details</h1>
               <p className="contact-text">
                 Fill up the form and our Team will get back to you within 24
                 hours.
