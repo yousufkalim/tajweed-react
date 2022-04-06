@@ -24,7 +24,7 @@ const Login = () => {
     localStorage.setItem("user", JSON.stringify(res.data?.student));
     localStorage.setItem("token", res.data.token);
 
-    window.location = "/PaymentsAfterLogin";
+    window.location = "/Products";
   };
 
   return (

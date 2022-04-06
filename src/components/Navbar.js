@@ -80,7 +80,7 @@ const Navbar = ({ about }) => {
                 style={{ zIndex: "10" }}
                 right
               >
-                 <Link to="/PaymentsAfterLogin">
+                 <Link to="/Products">
                 <DropdownItem style={{ color: "#47b45f" }} >
                   
                   <span>
