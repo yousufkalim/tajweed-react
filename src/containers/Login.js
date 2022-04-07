@@ -24,7 +24,7 @@ const Login = () => {
     localStorage.setItem("user", JSON.stringify(res.data?.student));
     localStorage.setItem("token", res.data.token);
 
-    window.location = "/PaymentsAfterLogin";
+    window.location = "/Products";
   };
 
   return (
@@ -66,7 +66,6 @@ const Login = () => {
                     <Input
                       className="form-control-alternative"
                       id="input-email"
-                      placeholder="johndoe@example.com"
                       type="text"
                       value={user.email}
                       name="email"
@@ -93,7 +92,6 @@ const Login = () => {
                     <Input
                       className="form-control-alternative"
                       id="input-password"
-                      placeholder="Password"
                       type="password"
                       value={user.password}
                       name="password"

@@ -36,6 +36,7 @@ const Products = () => {
               style={{ height: "70%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
+                <p style={{textAlign:"center",color:"green",fontSize:"xx-large"}}>English</p>
                 <img src={Picture} className="productImage" alt="img" />
               </Col>
               <Col lg="6" className="c22">
@@ -64,6 +65,7 @@ const Products = () => {
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
+              <p style={{textAlign:"center",color:"green",fontSize:"xx-large"}}>French</p>
                 <img src={simplifie} className="productImage" alt="img" />
               </Col>
               <Col lg="6" className="c22">
@@ -86,6 +88,7 @@ const Products = () => {
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
+              <p style={{textAlign:"center",color:"green",fontSize:"xx-large"}}>Muddah</p>
                 <img src={arabic} className=" productImage" alt="img" />
               </Col>
               <Col lg="6" className="c22">
@@ -142,6 +145,7 @@ const Products = () => {
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
+              <p style={{textAlign:"center",color:"green",fontSize:"xx-large"}}>Urdu</p>
                 <img src={urdu} className="productImage" alt="img" />
               </Col>
               <Col lg="6" className="c22">
@@ -164,6 +168,7 @@ const Products = () => {
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
+              <p style={{textAlign:"center",color:"green",fontSize:"xx-large"}}>Russian</p>
                 <img src={latin} className=" productImage" alt="img" />
               </Col>
               <Col lg="6" className="c22">
@@ -190,6 +195,7 @@ const Products = () => {
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
+              <p style={{textAlign:"center",color:"green",fontSize:"xx-large"}}>Tamil</p>
                 <img src={turkish} className="productImage" alt="img" />
               </Col>
               <Col lg="6" className="c22">

@@ -51,15 +51,6 @@ const Navbar = ({ about }) => {
               </li>
               <li>
                 <NavLink
-                  to="/PaymentsAfterLogin"
-                  className="nav-item"
-                  activeClassName="active-nav-item"
-                >
-                  Payment Records
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
                   to="/Products"
                   className="nav-item"
                   activeClassName="active-nav-item"
@@ -89,7 +80,7 @@ const Navbar = ({ about }) => {
                 style={{ zIndex: "10" }}
                 right
               >
-                 <Link to="/PaymentsAfterLogin">
+                 <Link to="/Products">
                 <DropdownItem style={{ color: "#47b45f" }} >
                   
                   <span>

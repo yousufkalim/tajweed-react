@@ -80,7 +80,6 @@ const Register = () => {
                   className="form-control-alternative"
                   id="input-fname"
                   required={true}
-                  placeholder="Anna"
                   type="text"
                   value={user.firstName}
                   name="firstName"
@@ -103,7 +102,6 @@ const Register = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-lname"
-                  placeholder="Doe"
                   type="text"
                   value={user.lastName}
                   name="lastName"
@@ -127,7 +125,6 @@ const Register = () => {
                 <Input
                   id="exampleSelect"
                   name="gender"
-                  placeholder="Select Gender"
                   value={user.gender}
                   onChange={handleInputChange}
                   style={{
@@ -154,7 +151,6 @@ const Register = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-age"
-                  placeholder="20"
                   type="number"
                   value={user.age}
                   name="age"
@@ -179,7 +175,6 @@ const Register = () => {
                   className="form-control-alternative"
                   id="input-city"
                   required={true}
-                  placeholder="Ottawa"
                   type="text"
                   value={user.city}
                   name="city"
@@ -201,7 +196,6 @@ const Register = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-state"
-                  placeholder="Alberta"
                   type="text"
                   value={user.state}
                   name="state"
@@ -226,7 +220,6 @@ const Register = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-country"
-                  placeholder="Canada"
                   type="text"
                   value={user.country}
                   name="country"
@@ -251,7 +244,6 @@ const Register = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-whatsapp_number"
-                  placeholder="+92 311 1234567"
                   type="text"
                   value={user.whatsapp_number}
                   name="whatsapp_number"
@@ -297,7 +289,7 @@ const Register = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-password"
-                  placeholder="Password"
+                 
                   type="password"
                   value={user.password}
                   name="password"

@@ -8,6 +8,8 @@ import Navbar from "../components/Navbar";
 import VocalSection from "../components/VocalSection";
 import Slider from "../components/Slider";
 import Footer from "../components/Footer";
+import PopUp from "../components/PopUp"
+
 
 // Home Component
 export default function Home() {

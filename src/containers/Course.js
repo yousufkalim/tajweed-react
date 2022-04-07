@@ -77,7 +77,7 @@ const Course = () => {
                   className="form-control-alternative"
                   id="input-fname"
                   required={true}
-                  placeholder="Daniel"
+               
                   type="text"
                   value={course?.father_name}
                   name="father_name"
@@ -104,7 +104,7 @@ const Course = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-fatherPhone"
-                  placeholder="+92 311 1234567"
+                 
                   type="number"
                   value={course.father_phone_number}
                   name="father_phone_number"
@@ -128,7 +128,7 @@ const Course = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-mname"
-                  placeholder="Anna"
+               
                   type="text"
                   value={course.mother_name}
                   name="mother_name"
@@ -153,7 +153,7 @@ const Course = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-motherphone"
-                  placeholder="+92 311 1234567"
+                
                   type="number"
                   value={course.mother_phone_number}
                   name="mother_phone_number"
@@ -188,6 +188,24 @@ const Course = () => {
                 >
                   <option value="Qaida/tajweed" selected>
                     Qaida/tajweed
+                  </option>
+                  <option value="Qaida/tajweed" selected>
+                  Tajweed & Tarteel 
+                  </option>
+                  <option value="Qaida/tajweed" selected>
+                  Tahfeedh & Memorization
+                  </option>
+                  <option value="Qaida/tajweed" selected>
+                  Translation & Tafseer
+                  </option>
+                  <option value="Qaida/tajweed" selected>
+                  Spoken Arabic 
+                  </option>
+                  <option value="Qaida/tajweed" selected>
+                  Classical & Quranic Arabic
+                  </option>
+                  <option value="Qaida/tajweed" selected>
+                  40 Hadith Memorization 
                   </option>
                 </Input>
               </FormGroup>
@@ -251,7 +269,6 @@ const Course = () => {
                   <Input
                     className="form-control-alternative"
                     id="input-skype"
-                    placeholder="Enter your Skype ID"
                     type="text"
                     value={course.skype_id}
                     name="skype_id"
@@ -273,7 +290,6 @@ const Course = () => {
                   <Input
                     className="form-control-alternative"
                     id="input-zoom"
-                    placeholder="Enter your  Zoom ID"
                     type="text"
                     value={course.zoom_id}
                     name="zoom_id"
