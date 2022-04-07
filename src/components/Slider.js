@@ -1,5 +1,5 @@
 import Carousel from "react-multi-carousel";
-import {useState} from 'react'
+import { useState } from "react";
 import "react-multi-carousel/lib/styles.css";
 import Picture from "../assets/images/Picture.svg";
 import urdu from "../assets/images/urdu.svg";
@@ -16,8 +16,8 @@ import turkish from "../assets/images/turkish.svg";
 import releasing from "../assets/images/releasing.svg";
 import TajweedR from "../assets/images/TajweedR.svg";
 import { descriptions } from "../utils/descriptions";
-import PopUp from "./PopUp"
-import axios from 'axios';
+import PopUp from "./PopUp";
+import axios from "axios";
 
 import { Col, Row, Button } from "reactstrap";
 
@@ -42,8 +42,9 @@ const Slider = () => {
       items: 1,
     },
   };
-  const handleUrdu=()=>{
-    let file = 'http://localhost:5000/uploads/tajweed-urdu.pdf';
+  const handleUrdu = () => {
+    const path = process.env.REACT_APP_FILE_PATH;
+    let file = `${path}/uploads/tajweed-urdu.pdf`;
     axios({
       url: file, //your url
       method: "GET",
@@ -52,12 +53,13 @@ const Slider = () => {
       const url = window.URL.createObjectURL(new Blob([response.data]));
       const link = document.createElement("a");
       link.href = url;
-      link.setAttribute("download", 'tajweed-urdu.pdf');
+      link.setAttribute("download", "tajweed-urdu.pdf");
       link.click();
     });
-  }
-  const handleEnglish=()=>{
-    let file = 'http://localhost:5000/uploads/tajweed-english.pdf';
+  };
+  const handleEnglish = () => {
+    const path = process.env.REACT_APP_FILE_PATH;
+    let file = `${path}/uploads/tajweed-english.pdf`;
     axios({
       url: file, //your url
       method: "GET",
@@ -66,18 +68,14 @@ const Slider = () => {
       const url = window.URL.createObjectURL(new Blob([response.data]));
       const link = document.createElement("a");
       link.href = url;
-      link.setAttribute("download", 'tajweed-english.pdf');
+      link.setAttribute("download", "tajweed-english.pdf");
       link.click();
     });
-   
-  }
-  
-     
+  };
 
-  
   return (
-    <div className="slider">{
-    }
+    <div className="slider">
+      {}
       <Row>
         <h4 className=" sliderheading text-center">
           Explore our Book in 7 different Languages
@@ -99,7 +97,12 @@ const Slider = () => {
             style={{ height: "100%", backgroundColor: "inherit" }}
           >
             <Col lg="6" className=" c1 text-right">
-              <img src={Picture} className="image" alt="img"  onClick={()=>setOpen(true)}/>
+              <img
+                src={Picture}
+                className="image"
+                alt="img"
+                onClick={() => setOpen(true)}
+              />
             </Col>
             <Col lg="6" className="c2">
               <img
@@ -111,16 +114,20 @@ const Slider = () => {
                 {descriptions.english.substring(0, 128)}...
               </p>
               <h1 className="price pb-3">$5</h1>
-              <div style={{display:"flex",alignItems:"center"}}>
-              <a href="http://www.darussalamcanada.com" target="_blank">
-                <Button color="success" id="s-button" className="button">
-                  Order Now
-                </Button>
-              </a>
-              <p>or
-              <span style={{color:"green"}} onClick={handleEnglish} > free download </span>
-              in pdf
-              </p>
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <a href="http://www.darussalamcanada.com" target="_blank">
+                  <Button color="success" id="s-button" className="button">
+                    Order Now
+                  </Button>
+                </a>
+                <p>
+                  or
+                  <span style={{ color: "green" }} onClick={handleEnglish}>
+                    {" "}
+                    free download{" "}
+                  </span>
+                  in pdf
+                </p>
               </div>
             </Col>
           </Row>
@@ -134,21 +141,30 @@ const Slider = () => {
               <img src={urdu} className="image" alt="img" />
             </Col>
             <Col lg="6" className="c2">
-              <img src={Tajweedurdu} className="book" alt="Tajweedurdu" onClick={()=>setOpen(true)}/>
+              <img
+                src={Tajweedurdu}
+                className="book"
+                alt="Tajweedurdu"
+                onClick={() => setOpen(true)}
+              />
               <p className="s-text text-left py-4" title={descriptions.urdu}>
-                {descriptions.urdu.substring(0,150)}...
+                {descriptions.urdu.substring(0, 150)}...
               </p>
               <h1 className="price pb-3">$5</h1>
-              <div style={{display:"flex",alignItems:"center"}}>
-              <a href="http://www.darussalamcanada.com" target="_blank">
-                <Button color="success" id="s-button" className="button">
-                  Order Now
-                </Button>
-              </a>
-              <p>or
-              <span style={{color:"green"}} onClick={handleUrdu}> free download </span>
-              in pdf
-              </p>
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <a href="http://www.darussalamcanada.com" target="_blank">
+                  <Button color="success" id="s-button" className="button">
+                    Order Now
+                  </Button>
+                </a>
+                <p>
+                  or
+                  <span style={{ color: "green" }} onClick={handleUrdu}>
+                    {" "}
+                    free download{" "}
+                  </span>
+                  in pdf
+                </p>
               </div>
             </Col>
           </Row>
@@ -159,12 +175,17 @@ const Slider = () => {
             style={{ height: "100%", backgroundColor: "inherit" }}
           >
             <Col lg="6" className=" c1 text-right">
-              <img src={simplifie} className="image" alt="img" onClick={()=>setOpen(true)} />
+              <img
+                src={simplifie}
+                className="image"
+                alt="img"
+                onClick={() => setOpen(true)}
+              />
             </Col>
             <Col lg="6" className="c2">
-              <img src={Tajweedsim} className="book" alt="Tajweedurdu"  />
+              <img src={Tajweedsim} className="book" alt="Tajweedurdu" />
               <p className="s-text text-left py-4" title={descriptions.french}>
-               {descriptions.french.substring(0,117)}...
+                {descriptions.french.substring(0, 117)}...
               </p>
               <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
@@ -181,12 +202,17 @@ const Slider = () => {
             style={{ height: "100%", backgroundColor: "inherit" }}
           >
             <Col lg="6" className=" c1 text-right">
-              <img src={latin} className="image" alt="img" onClick={()=>setOpen(true)} />
+              <img
+                src={latin}
+                className="image"
+                alt="img"
+                onClick={() => setOpen(true)}
+              />
             </Col>
             <Col lg="6" className="c2">
               <img src={TajweedLatin} className="book" alt="Tajweedurdu" />
               <p className="s-text text-left py-4" title={descriptions.russian}>
-                {descriptions.russian.substring(0,150)}....
+                {descriptions.russian.substring(0, 150)}....
               </p>
               <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
@@ -203,12 +229,17 @@ const Slider = () => {
             style={{ height: "100%", backgroundColor: "inherit" }}
           >
             <Col lg="6" className=" c1 text-right">
-              <img src={arabic} className="image" alt="img" onClick={()=>setOpen(true)}/>
+              <img
+                src={arabic}
+                className="image"
+                alt="img"
+                onClick={() => setOpen(true)}
+              />
             </Col>
             <Col lg="6" className="c2">
               <img src={TajweedArabic} className="book" alt="TajweedArabic" />
               <p className="s-text text-left py-4" title={descriptions.malay}>
-                {descriptions.malay.substring(0,126)}...
+                {descriptions.malay.substring(0, 126)}...
               </p>
               <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
@@ -225,12 +256,17 @@ const Slider = () => {
             style={{ height: "100%", backgroundColor: "inherit" }}
           >
             <Col lg="6" className=" c1 text-right">
-              <img src={turkish} className="image" alt="img" onClick={()=>setOpen(true)}/>
+              <img
+                src={turkish}
+                className="image"
+                alt="img"
+                onClick={() => setOpen(true)}
+              />
             </Col>
             <Col lg="6" className="c2">
               <img src={Tajweedturkish} className="book" alt="Tajweedturkish" />
               <p className="s-text text-left py-4" title={descriptions.tamil}>
-                {descriptions.tamil.substring(0,130)}...
+                {descriptions.tamil.substring(0, 130)}...
               </p>
               <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
@@ -247,7 +283,12 @@ const Slider = () => {
             style={{ height: "100%", backgroundColor: "inherit" }}
           >
             <Col lg="6" className=" c1 text-right">
-              <img src={releasing} className="image" alt="img"  onClick={()=>setOpen(true)}/>
+              <img
+                src={releasing}
+                className="image"
+                alt="img"
+                onClick={() => setOpen(true)}
+              />
             </Col>
             <Col lg="6" className="c2">
               <img src={TajweedR} className="book" alt="TajweedR" />
@@ -269,7 +310,7 @@ const Slider = () => {
           </Row>
         </div>
       </Carousel>
-      <PopUp open={open} handleClose={()=>setOpen(false)}  />
+      <PopUp open={open} handleClose={() => setOpen(false)} />
     </div>
   );
 };

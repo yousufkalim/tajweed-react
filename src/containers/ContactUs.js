@@ -1,12 +1,10 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Table from "../assets/images/Table.svg";
-import Icon from "../assets/images/ICON.svg";
+import Icon from "../assets/images/Icon.svg";
 import Email from "../assets/images/Email.svg";
-
 import { useState } from "react";
 import { Row, Col, FormGroup, Form, Input, Label, Button } from "reactstrap";
-import { Link } from "react-router-dom";
 import api from "../api/index";
 import { toast } from "react-toastify";
 
