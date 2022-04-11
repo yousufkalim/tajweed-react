@@ -36,7 +36,15 @@ const Products = () => {
               style={{ height: "70%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
-                <p style={{textAlign:"center",color:"green",fontSize:"xx-large"}}>English</p>
+                <p
+                  style={{
+                    textAlign: "center",
+                    color: "green",
+                    fontSize: "xx-large",
+                  }}
+                >
+                  English
+                </p>
                 <img src={Picture} className="productImage" alt="img" />
               </Col>
               <Col lg="6" className="c22">
@@ -45,9 +53,13 @@ const Products = () => {
                   className="bookText"
                   alt="TajweedMadeEasy"
                 />
-      
-                <p className="s-text text-left pt-4" id="productText" title={descriptions.english}>
-                {descriptions.english.substring(0, 127)}...
+
+                <p
+                  className="s-text text-left pt-4"
+                  id="productText"
+                  title={descriptions.english}
+                >
+                  {descriptions.english.substring(0, 127)}...
                 </p>
 
                 <h1 className="productPrice pb-3">$5</h1>
@@ -65,20 +77,32 @@ const Products = () => {
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
-              <p style={{textAlign:"center",color:"green",fontSize:"xx-large"}}>French</p>
+                <p
+                  style={{
+                    textAlign: "center",
+                    color: "green",
+                    fontSize: "xx-large",
+                  }}
+                >
+                  French
+                </p>
                 <img src={simplifie} className="productImage" alt="img" />
               </Col>
               <Col lg="6" className="c22">
                 <img src={Tajweedsim} className="bookText" alt="Tajweedurdu" />
-                <p className="s-text text-left pt-4" id="productText" title={descriptions.french}>
-                 {descriptions.french.substring(0,89)}...
+                <p
+                  className="s-text text-left pt-4"
+                  id="productText"
+                  title={descriptions.french}
+                >
+                  {descriptions.french.substring(0, 89)}...
                 </p>
-                <h1 className="productPrice pb-3">$5</h1>
+                {/* <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
-                </a>
+                </a> */}
               </Col>
             </Row>
           </div>
@@ -88,7 +112,15 @@ const Products = () => {
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
-              <p style={{textAlign:"center",color:"green",fontSize:"xx-large"}}>Muddah</p>
+                <p
+                  style={{
+                    textAlign: "center",
+                    color: "green",
+                    fontSize: "xx-large",
+                  }}
+                >
+                  Muddah
+                </p>
                 <img src={arabic} className=" productImage" alt="img" />
               </Col>
               <Col lg="6" className="c22">
@@ -97,19 +129,23 @@ const Products = () => {
                   className="bookText"
                   alt="TajweedArabic"
                 />
-                <p className="s-text text-left pt-4" id="productText" title={descriptions.malay}>
-                 {descriptions.malay.substring(0,90)}...
+                <p
+                  className="s-text text-left pt-4"
+                  id="productText"
+                  title={descriptions.malay}
+                >
+                  {descriptions.malay.substring(0, 90)}...
                 </p>
-                <h1 className="productPrice pb-3">$5</h1>
+                {/* <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
-                </a>
+                </a> */}
               </Col>
             </Row>
           </div>
-          <div className="s-container container">
+          {/* <div className="s-container container">
             <Row
               className="slider"
               style={{ height: "100%", backgroundColor: "inherit" }}
@@ -135,7 +171,7 @@ const Products = () => {
                 </Button>
               </Col>
             </Row>
-          </div>
+          </div> */}
         </Col>
         <Col lg="6">
           {" "}
@@ -145,13 +181,26 @@ const Products = () => {
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
-              <p style={{textAlign:"center",color:"green",fontSize:"xx-large"}}>Urdu</p>
+                <p
+                  style={{
+                    textAlign: "center",
+                    color: "green",
+                    fontSize: "xx-large",
+                  }}
+                >
+                  Urdu
+                </p>
                 <img src={urdu} className="productImage" alt="img" />
               </Col>
               <Col lg="6" className="c22">
                 <img src={Tajweedurdu} className="bookText" alt="Tajweedurdu" />
-                <p className="s-text text-left pt-4" id="productText" title={descriptions.urdu}>
-                   {descriptions.urdu.substring(0,159)}{"...."}
+                <p
+                  className="s-text text-left pt-4"
+                  id="productText"
+                  title={descriptions.urdu}
+                >
+                  {descriptions.urdu.substring(0, 159)}
+                  {"...."}
                 </p>
                 <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
@@ -168,7 +217,15 @@ const Products = () => {
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
-              <p style={{textAlign:"center",color:"green",fontSize:"xx-large"}}>Russian</p>
+                <p
+                  style={{
+                    textAlign: "center",
+                    color: "green",
+                    fontSize: "xx-large",
+                  }}
+                >
+                  Russian
+                </p>
                 <img src={latin} className=" productImage" alt="img" />
               </Col>
               <Col lg="6" className="c22">
@@ -177,15 +234,19 @@ const Products = () => {
                   className=" bookText"
                   alt="Tajweedurdu"
                 />
-                <p className="s-text text-left pt-4" id="productText" title={descriptions.russian}>
-                  {descriptions.russian.substring(0,100)}...
+                <p
+                  className="s-text text-left pt-4"
+                  id="productText"
+                  title={descriptions.russian}
+                >
+                  {descriptions.russian.substring(0, 100)}...
                 </p>
-                <h1 className="productPrice pb-3">$5</h1>
+                {/* <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
-                </a>
+                </a> */}
               </Col>
             </Row>
           </div>
@@ -195,7 +256,15 @@ const Products = () => {
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
-              <p style={{textAlign:"center",color:"green",fontSize:"xx-large"}}>Tamil</p>
+                <p
+                  style={{
+                    textAlign: "center",
+                    color: "green",
+                    fontSize: "xx-large",
+                  }}
+                >
+                  Tamil
+                </p>
                 <img src={turkish} className="productImage" alt="img" />
               </Col>
               <Col lg="6" className="c22">
@@ -204,15 +273,19 @@ const Products = () => {
                   className="mb-4 bookText"
                   alt="Tajweedturkish"
                 />
-                <p className="s-text text-left pt-4" id="productText" title ={descriptions.tamil}>
-                 {descriptions.tamil.substring(0,90)}...
+                <p
+                  className="s-text text-left pt-4"
+                  id="productText"
+                  title={descriptions.tamil}
+                >
+                  {descriptions.tamil.substring(0, 90)}...
                 </p>
-                <h1 className="productPrice pb-3 mb-4 ">$5</h1>
+                {/* <h1 className="productPrice pb-3 mb-4 ">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
-                </a>
+                </a> */}
               </Col>
             </Row>
           </div>

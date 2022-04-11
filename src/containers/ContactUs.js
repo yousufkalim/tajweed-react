@@ -46,7 +46,7 @@ const ContactUs = () => {
               <div className="info">
                 {" "}
                 <div>
-                  <img src={Icon} alt="phone" /> &nbsp; 042 2233445
+                  <img src={Icon} alt="phone" /> &nbsp; +1 (416) 400-9988
                 </div>{" "}
                 <div style={{ marginLeft: "2%" }}>
                   <img src={Email} alt="email" /> &nbsp;contact@tajweed.com
@@ -74,7 +74,6 @@ const ContactUs = () => {
                   <Input
                     className="form-control-alternative"
                     id="input-name"
-                    placeholder="name"
                     type="text"
                     value={user.name}
                     name="name"
@@ -93,7 +92,6 @@ const ContactUs = () => {
                   <Input
                     className="form-control-alternative"
                     id="input-email"
-                    placeholder="johndoe@example.com"
                     type="text"
                     value={user.email}
                     name="email"
@@ -112,7 +110,6 @@ const ContactUs = () => {
                   <Input
                     className="form-control-alternative"
                     id="input-name"
-                    placeholder="Type something"
                     type="textarea"
                     value={user.message}
                     name="message"

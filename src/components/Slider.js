@@ -97,6 +97,15 @@ const Slider = () => {
             style={{ height: "100%", backgroundColor: "inherit" }}
           >
             <Col lg="6" className=" c1 text-right">
+              <p
+                style={{
+                  textAlign: "center",
+                  color: "green",
+                  fontSize: "xx-large",
+                }}
+              >
+                English
+              </p>
               <img
                 src={Picture}
                 className="image"
@@ -138,6 +147,15 @@ const Slider = () => {
             style={{ height: "100%", backgroundColor: "inherit" }}
           >
             <Col lg="6" className=" c1 text-right">
+              <p
+                style={{
+                  textAlign: "center",
+                  color: "green",
+                  fontSize: "xx-large",
+                }}
+              >
+                Urdu
+              </p>
               <img src={urdu} className="image" alt="img" />
             </Col>
             <Col lg="6" className="c2">
@@ -175,6 +193,15 @@ const Slider = () => {
             style={{ height: "100%", backgroundColor: "inherit" }}
           >
             <Col lg="6" className=" c1 text-right">
+              <p
+                style={{
+                  textAlign: "center",
+                  color: "green",
+                  fontSize: "xx-large",
+                }}
+              >
+                French
+              </p>
               <img
                 src={simplifie}
                 className="image"
@@ -187,12 +214,12 @@ const Slider = () => {
               <p className="s-text text-left py-4" title={descriptions.french}>
                 {descriptions.french.substring(0, 117)}...
               </p>
-              <h1 className="price pb-3">$5</h1>
+              {/* <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
                 <Button color="success" id="s-button" className="button">
                   Order Now
                 </Button>
-              </a>
+              </a> */}
             </Col>
           </Row>
         </div>
@@ -202,6 +229,15 @@ const Slider = () => {
             style={{ height: "100%", backgroundColor: "inherit" }}
           >
             <Col lg="6" className=" c1 text-right">
+              <p
+                style={{
+                  textAlign: "center",
+                  color: "green",
+                  fontSize: "xx-large",
+                }}
+              >
+                Russian
+              </p>
               <img
                 src={latin}
                 className="image"
@@ -214,12 +250,12 @@ const Slider = () => {
               <p className="s-text text-left py-4" title={descriptions.russian}>
                 {descriptions.russian.substring(0, 150)}....
               </p>
-              <h1 className="price pb-3">$5</h1>
+              {/* <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
                 <Button color="success" id="s-button" className="button">
                   Order Now
                 </Button>
-              </a>
+              </a> */}
             </Col>
           </Row>
         </div>
@@ -229,6 +265,15 @@ const Slider = () => {
             style={{ height: "100%", backgroundColor: "inherit" }}
           >
             <Col lg="6" className=" c1 text-right">
+              <p
+                style={{
+                  textAlign: "center",
+                  color: "green",
+                  fontSize: "xx-large",
+                }}
+              >
+                Malay
+              </p>
               <img
                 src={arabic}
                 className="image"
@@ -241,12 +286,12 @@ const Slider = () => {
               <p className="s-text text-left py-4" title={descriptions.malay}>
                 {descriptions.malay.substring(0, 126)}...
               </p>
-              <h1 className="price pb-3">$5</h1>
+              {/* <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
                 <Button color="success" id="s-button" className="button">
                   Order Now
                 </Button>
-              </a>
+              </a> */}
             </Col>
           </Row>
         </div>
@@ -256,6 +301,15 @@ const Slider = () => {
             style={{ height: "100%", backgroundColor: "inherit" }}
           >
             <Col lg="6" className=" c1 text-right">
+              <p
+                style={{
+                  textAlign: "center",
+                  color: "green",
+                  fontSize: "xx-large",
+                }}
+              >
+                Tamil
+              </p>
               <img
                 src={turkish}
                 className="image"
@@ -268,44 +322,12 @@ const Slider = () => {
               <p className="s-text text-left py-4" title={descriptions.tamil}>
                 {descriptions.tamil.substring(0, 130)}...
               </p>
-              <h1 className="price pb-3">$5</h1>
+              {/* <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
                 <Button color="success" id="s-button" className="button">
                   Order Now
                 </Button>
-              </a>
-            </Col>
-          </Row>
-        </div>
-        <div className="s-container container">
-          <Row
-            className="slider"
-            style={{ height: "100%", backgroundColor: "inherit" }}
-          >
-            <Col lg="6" className=" c1 text-right">
-              <img
-                src={releasing}
-                className="image"
-                alt="img"
-                onClick={() => setOpen(true)}
-              />
-            </Col>
-            <Col lg="6" className="c2">
-              <img src={TajweedR} className="book" alt="TajweedR" />
-              <p className="s-text text-left py-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's{" "}
-              </p>
-              <h1 className="price pb-3">$00</h1>
-              <Button
-                color="secondary"
-                disabled
-                id="s-button"
-                className="button"
-                style={{ boxShadow: "none" }}
-              >
-                Order Now
-              </Button>
+              </a> */}
             </Col>
           </Row>
         </div>

@@ -15,8 +15,18 @@ const JoinSection = () => {
               device to <strong>learn smartly.</strong>
             </h1>
             <div className="box-buttons">
-              <img src={Apple} className="img1 p-4" alt="Apple" />
-              <img src={Google} alt="Google" />
+              <a
+                href="https://apps.apple.com/us/app/tajweed-made-easy/id1617022976"
+                className="link"
+              >
+                <img src={Apple} className="p-3" alt="Apple" />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.falcon.tajweed"
+                className="link"
+              >
+                <img src={Google} alt="Google" />
+              </a>
             </div>
             <img src={Table} className="table-image" alt="table" />
           </Col>
