@@ -10,12 +10,17 @@ const About = () => {
       <Row>
         <Col lg="4" className="firstCol">
           <h1 className="aboutHead">Tajweed.</h1>
-          <p className="aboutText">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </p>
+          <ul>
+            <li>
+              At Tajweed Made Easy, Our goal is to make Qur'an learning and
+              recitation easy for the beginners and for new Muslims and Adults.
+            </li>
+            <li>
+              Our focus is to spread the knowledge of Tajweed, starting from
+              Makharij and covering all basic rules of Tajweed and enabling our
+              students to read Quran with proper Tajweed and fluency.
+            </li>
+          </ul>
         </Col>
         <Col lg="6">
           <img src={about} className="aboutImg" alt="vector" />

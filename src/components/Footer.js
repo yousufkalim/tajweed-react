@@ -23,9 +23,24 @@ const Footer = () => {
               </Link>
             </div>
             <div className="icons" style={{ marginLeft: "28%" }}>
-              <img src={Facebook} alt="tajweed_logo" />
-              <img src={instagram} alt="tajweed_logo" />
-              <img src={youtube} alt="tajweed_logo" />
+              <a
+                href="https://www.facebook.com/easytajweedlearning/?ref=pages_you_manage"
+                className="link"
+              >
+                <img src={Facebook} alt="tajweed_logo" />
+              </a>
+              <a
+                href="https://www.instagram.com/madeeasytajweed/"
+                className="link"
+              >
+                <img src={instagram} alt="tajweed_logo" />
+              </a>
+              <a
+                href="https://apps.apple.com/us/app/tajweed-made-easy/id1617022976"
+                className="link"
+              >
+                <img src={youtube} alt="tajweed_logo" />
+              </a>
             </div>
             <div className="f-text pb-3">
               <h6 style={{ marginLeft: "28%" }}>Terms & Conditions</h6>

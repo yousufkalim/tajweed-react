@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useState } from "react";
 import Picture from "../assets/images/Picture.svg";
 import urdu from "../assets/images/urdu.svg";
 import TajweedMadeEasy from "../assets/images/TajweedMadeEasy.svg";
@@ -16,8 +17,41 @@ import releasing from "../assets/images/releasing.svg";
 import TajweedR from "../assets/images/TajweedR.svg";
 import { Row, Col, Button } from "reactstrap";
 import { descriptions } from "../utils/descriptions";
+import axios from "axios";
+import PopUp from "../components/PopUp";
 
 const Products = () => {
+  const [open, setOpen] = useState(false);
+  const handleUrdu = () => {
+    const path = process.env.REACT_APP_FILE_PATH;
+    let file = `${path}/uploads/tajweed-urdu.pdf`;
+    axios({
+      url: file, //your url
+      method: "GET",
+      responseType: "blob", // important
+    }).then((response) => {
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "tajweed-urdu.pdf");
+      link.click();
+    });
+  };
+  const handleEnglish = () => {
+    const path = process.env.REACT_APP_FILE_PATH;
+    let file = `${path}/uploads/tajweed-english.pdf`;
+    axios({
+      url: file, //your url
+      method: "GET",
+      responseType: "blob", // important
+    }).then((response) => {
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "tajweed-english.pdf");
+      link.click();
+    });
+  };
   return (
     <>
       <Navbar />
@@ -45,7 +79,12 @@ const Products = () => {
                 >
                   English
                 </p>
-                <img src={Picture} className="productImage" alt="img" />
+                <img
+                  src={Picture}
+                  className="productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img
@@ -59,7 +98,7 @@ const Products = () => {
                   id="productText"
                   title={descriptions.english}
                 >
-                  {descriptions.english.substring(0, 127)}...
+                  {descriptions.english.substring(0, 127)}...see more...
                 </p>
 
                 <h1 className="productPrice pb-3">$5</h1>
@@ -68,6 +107,14 @@ const Products = () => {
                     Order Now
                   </Button>
                 </a>
+                <p style={{ marginTop: "10px" }}>
+                  or
+                  <span style={{ color: "green" }} onClick={handleEnglish}>
+                    {" "}
+                    free download{" "}
+                  </span>
+                  in pdf
+                </p>
               </Col>
             </Row>
           </div>
@@ -86,7 +133,12 @@ const Products = () => {
                 >
                   French
                 </p>
-                <img src={simplifie} className="productImage" alt="img" />
+                <img
+                  src={simplifie}
+                  className="productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img src={Tajweedsim} className="bookText" alt="Tajweedurdu" />
@@ -95,7 +147,7 @@ const Products = () => {
                   id="productText"
                   title={descriptions.french}
                 >
-                  {descriptions.french.substring(0, 89)}...
+                  {descriptions.french.substring(0, 89)}...voir plus...
                 </p>
                 {/* <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
@@ -121,7 +173,12 @@ const Products = () => {
                 >
                   Muddah
                 </p>
-                <img src={arabic} className=" productImage" alt="img" />
+                <img
+                  src={arabic}
+                  className=" productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img
@@ -134,7 +191,7 @@ const Products = () => {
                   id="productText"
                   title={descriptions.malay}
                 >
-                  {descriptions.malay.substring(0, 90)}...
+                  {descriptions.malay.substring(0, 90)}...lihat lagi...
                 </p>
                 {/* <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
@@ -190,7 +247,12 @@ const Products = () => {
                 >
                   Urdu
                 </p>
-                <img src={urdu} className="productImage" alt="img" />
+                <img
+                  src={urdu}
+                  className="productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img src={Tajweedurdu} className="bookText" alt="Tajweedurdu" />
@@ -200,7 +262,7 @@ const Products = () => {
                   title={descriptions.urdu}
                 >
                   {descriptions.urdu.substring(0, 159)}
-                  {"...."}
+                  {"..ا ب ت.."}
                 </p>
                 <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
@@ -208,6 +270,14 @@ const Products = () => {
                     Order Now
                   </Button>
                 </a>
+                <p style={{ marginTop: "22px" }}>
+                  or
+                  <span style={{ color: "green" }} onClick={handleUrdu}>
+                    {" "}
+                    free download{" "}
+                  </span>
+                  in pdf
+                </p>
               </Col>
             </Row>
           </div>
@@ -226,7 +296,12 @@ const Products = () => {
                 >
                   Russian
                 </p>
-                <img src={latin} className=" productImage" alt="img" />
+                <img
+                  src={latin}
+                  className=" productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img
@@ -239,7 +314,7 @@ const Products = () => {
                   id="productText"
                   title={descriptions.russian}
                 >
-                  {descriptions.russian.substring(0, 100)}...
+                  {descriptions.russian.substring(0, 100)}...узнать больше...
                 </p>
                 {/* <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
@@ -265,7 +340,12 @@ const Products = () => {
                 >
                   Tamil
                 </p>
-                <img src={turkish} className="productImage" alt="img" />
+                <img
+                  src={turkish}
+                  className="productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img
@@ -278,7 +358,7 @@ const Products = () => {
                   id="productText"
                   title={descriptions.tamil}
                 >
-                  {descriptions.tamil.substring(0, 90)}...
+                  {descriptions.tamil.substring(0, 90)}...மேலும் பார்க்க...
                 </p>
                 {/* <h1 className="productPrice pb-3 mb-4 ">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
@@ -292,6 +372,7 @@ const Products = () => {
         </Col>
       </Row>
       <Footer />
+      <PopUp open={open} handleClose={() => setOpen(false)} />
     </>
   );
 };
