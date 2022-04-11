@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useState } from "react";
 import Picture from "../assets/images/Picture.svg";
 import urdu from "../assets/images/urdu.svg";
 import TajweedMadeEasy from "../assets/images/TajweedMadeEasy.svg";
@@ -17,8 +18,10 @@ import TajweedR from "../assets/images/TajweedR.svg";
 import { Row, Col, Button } from "reactstrap";
 import { descriptions } from "../utils/descriptions";
 import axios from "axios";
+import PopUp from "../components/PopUp";
 
 const Products = () => {
+  const [open, setOpen] = useState(false);
   const handleUrdu = () => {
     const path = process.env.REACT_APP_FILE_PATH;
     let file = `${path}/uploads/tajweed-urdu.pdf`;
@@ -76,7 +79,12 @@ const Products = () => {
                 >
                   English
                 </p>
-                <img src={Picture} className="productImage" alt="img" />
+                <img
+                  src={Picture}
+                  className="productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img
@@ -125,7 +133,12 @@ const Products = () => {
                 >
                   French
                 </p>
-                <img src={simplifie} className="productImage" alt="img" />
+                <img
+                  src={simplifie}
+                  className="productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img src={Tajweedsim} className="bookText" alt="Tajweedurdu" />
@@ -160,7 +173,12 @@ const Products = () => {
                 >
                   Muddah
                 </p>
-                <img src={arabic} className=" productImage" alt="img" />
+                <img
+                  src={arabic}
+                  className=" productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img
@@ -229,7 +247,12 @@ const Products = () => {
                 >
                   Urdu
                 </p>
-                <img src={urdu} className="productImage" alt="img" />
+                <img
+                  src={urdu}
+                  className="productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img src={Tajweedurdu} className="bookText" alt="Tajweedurdu" />
@@ -273,7 +296,12 @@ const Products = () => {
                 >
                   Russian
                 </p>
-                <img src={latin} className=" productImage" alt="img" />
+                <img
+                  src={latin}
+                  className=" productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img
@@ -312,7 +340,12 @@ const Products = () => {
                 >
                   Tamil
                 </p>
-                <img src={turkish} className="productImage" alt="img" />
+                <img
+                  src={turkish}
+                  className="productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img
@@ -339,6 +372,7 @@ const Products = () => {
         </Col>
       </Row>
       <Footer />
+      <PopUp open={open} handleClose={() => setOpen(false)} />
     </>
   );
 };
