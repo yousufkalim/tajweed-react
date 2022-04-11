@@ -283,7 +283,7 @@ const Slider = () => {
             <Col lg="6" className="c2">
               <img src={TajweedArabic} className="book" alt="TajweedArabic" />
               <p className="s-text text-left py-4" title={descriptions.malay}>
-                {descriptions.malay.substring(0, 126)}...
+                {descriptions.malay.substring(0, 126)}..lihat lagi..
               </p>
               {/* <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
