@@ -60,8 +60,18 @@ const Footer = () => {
               anywhere even without internet.
             </h6>
             <div className="box-buttons2">
-              <img src={Apple} className="p-3" alt="Apple" />
-              <img src={Google} alt="Google" />
+              <a
+                href="https://apps.apple.com/us/app/tajweed-made-easy/id1617022976"
+                className="link"
+              >
+                <img src={Apple} className="p-3" alt="Apple" />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.falcon.tajweed"
+                className="link"
+              >
+                <img src={Google} alt="Google" />
+              </a>
             </div>
           </Col>
 

@@ -267,7 +267,6 @@ const Register = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-email"
-                  placeholder="johndoe@example.com"
                   type="text"
                   value={user.email}
                   name="email"
@@ -289,7 +288,6 @@ const Register = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-password"
-                 
                   type="password"
                   value={user.password}
                   name="password"

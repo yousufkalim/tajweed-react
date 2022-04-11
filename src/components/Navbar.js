@@ -13,7 +13,7 @@ import Logo from "../assets/images/Logo.svg";
 
 const Navbar = ({ about }) => {
   const { user, loggedIn } = Store();
- 
+
   const handleLogout = () => {
     localStorage.removeItem("user");
     localStorage.removeItem("token");
@@ -31,6 +31,15 @@ const Navbar = ({ about }) => {
           </div>
           <div>
             <ul id="menu" className="mt-3">
+              <li>
+                <NavLink
+                  to="/"
+                  className="nav-item"
+                  activeClassName="active-nav-item"
+                >
+                  Home
+                </NavLink>
+              </li>
               <li>
                 <NavLink
                   to="/About"
@@ -58,7 +67,6 @@ const Navbar = ({ about }) => {
                   Products
                 </NavLink>
               </li>
-             
             </ul>
           </div>
           {loggedIn ? (
@@ -80,17 +88,15 @@ const Navbar = ({ about }) => {
                 style={{ zIndex: "10" }}
                 right
               >
-                 <Link to="/Products">
-                <DropdownItem style={{ color: "#47b45f" }} >
-                  
-                  <span>
-                    {user.first_name} {user.last_name}
-                    <br />
-                    {user.email}
-                  </span>
-                 
-                </DropdownItem>
-                 </Link>
+                <Link to="/Products">
+                  <DropdownItem style={{ color: "#47b45f" }}>
+                    <span>
+                      {user.first_name} {user.last_name}
+                      <br />
+                      {user.email}
+                    </span>
+                  </DropdownItem>
+                </Link>
                 <DropdownItem divider />
                 <DropdownItem onClick={handleLogout}>
                   <span>Logout</span>
