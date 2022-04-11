@@ -59,7 +59,7 @@ const Products = () => {
                   id="productText"
                   title={descriptions.english}
                 >
-                  {descriptions.english.substring(0, 127)}...
+                  {descriptions.english.substring(0, 127)}...see more...
                 </p>
 
                 <h1 className="productPrice pb-3">$5</h1>
@@ -95,7 +95,7 @@ const Products = () => {
                   id="productText"
                   title={descriptions.french}
                 >
-                  {descriptions.french.substring(0, 89)}...
+                  {descriptions.french.substring(0, 89)}...voir plus...
                 </p>
                 {/* <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
@@ -134,7 +134,7 @@ const Products = () => {
                   id="productText"
                   title={descriptions.malay}
                 >
-                  {descriptions.malay.substring(0, 90)}...
+                  {descriptions.malay.substring(0, 90)}...lihat lagi...
                 </p>
                 {/* <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
@@ -200,7 +200,7 @@ const Products = () => {
                   title={descriptions.urdu}
                 >
                   {descriptions.urdu.substring(0, 159)}
-                  {"...."}
+                  {"..ا ب ت.."}
                 </p>
                 <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
@@ -239,7 +239,7 @@ const Products = () => {
                   id="productText"
                   title={descriptions.russian}
                 >
-                  {descriptions.russian.substring(0, 100)}...
+                  {descriptions.russian.substring(0, 100)}...узнать больше...
                 </p>
                 {/* <h1 className="productPrice pb-3">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">
@@ -278,7 +278,7 @@ const Products = () => {
                   id="productText"
                   title={descriptions.tamil}
                 >
-                  {descriptions.tamil.substring(0, 90)}...
+                  {descriptions.tamil.substring(0, 90)}...மேலும் பார்க்க...
                 </p>
                 {/* <h1 className="productPrice pb-3 mb-4 ">$5</h1>
                 <a href="http://www.darussalamcanada.com" target="_blank">

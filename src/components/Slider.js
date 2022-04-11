@@ -90,7 +90,6 @@ const Slider = () => {
         dotListClass="sliderDots"
         className="CustomerreviewCarousel"
       >
-        {/* {reviews.map((item) => ( */}
         <div className="s-container container">
           <Row
             className="slider"
@@ -120,7 +119,7 @@ const Slider = () => {
                 alt="TajweedMadeEasy"
               />
               <p className="s-text text-left py-4" title={descriptions.english}>
-                {descriptions.english.substring(0, 128)}...
+                {descriptions.english.substring(0, 128)}..See more..
               </p>
               <h1 className="price pb-3">$5</h1>
               <div style={{ display: "flex", alignItems: "center" }}>
@@ -166,7 +165,7 @@ const Slider = () => {
                 onClick={() => setOpen(true)}
               />
               <p className="s-text text-left py-4" title={descriptions.urdu}>
-                {descriptions.urdu.substring(0, 150)}...
+                {descriptions.urdu.substring(0, 150)}...ا ب ت
               </p>
               <h1 className="price pb-3">$5</h1>
               <div style={{ display: "flex", alignItems: "center" }}>
@@ -212,7 +211,7 @@ const Slider = () => {
             <Col lg="6" className="c2">
               <img src={Tajweedsim} className="book" alt="Tajweedurdu" />
               <p className="s-text text-left py-4" title={descriptions.french}>
-                {descriptions.french.substring(0, 117)}...
+                {descriptions.french.substring(0, 117)}..voir plus..
               </p>
               {/* <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
@@ -248,7 +247,7 @@ const Slider = () => {
             <Col lg="6" className="c2">
               <img src={TajweedLatin} className="book" alt="Tajweedurdu" />
               <p className="s-text text-left py-4" title={descriptions.russian}>
-                {descriptions.russian.substring(0, 150)}....
+                {descriptions.russian.substring(0, 150)}..узнать больше..
               </p>
               {/* <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
@@ -320,7 +319,7 @@ const Slider = () => {
             <Col lg="6" className="c2">
               <img src={Tajweedturkish} className="book" alt="Tajweedturkish" />
               <p className="s-text text-left py-4" title={descriptions.tamil}>
-                {descriptions.tamil.substring(0, 130)}...
+                {descriptions.tamil.substring(0, 130)}..மேலும் பார்க்க..
               </p>
               {/* <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
