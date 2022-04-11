@@ -16,8 +16,39 @@ import releasing from "../assets/images/releasing.svg";
 import TajweedR from "../assets/images/TajweedR.svg";
 import { Row, Col, Button } from "reactstrap";
 import { descriptions } from "../utils/descriptions";
+import axios from "axios";
 
 const Products = () => {
+  const handleUrdu = () => {
+    const path = process.env.REACT_APP_FILE_PATH;
+    let file = `${path}/uploads/tajweed-urdu.pdf`;
+    axios({
+      url: file, //your url
+      method: "GET",
+      responseType: "blob", // important
+    }).then((response) => {
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "tajweed-urdu.pdf");
+      link.click();
+    });
+  };
+  const handleEnglish = () => {
+    const path = process.env.REACT_APP_FILE_PATH;
+    let file = `${path}/uploads/tajweed-english.pdf`;
+    axios({
+      url: file, //your url
+      method: "GET",
+      responseType: "blob", // important
+    }).then((response) => {
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "tajweed-english.pdf");
+      link.click();
+    });
+  };
   return (
     <>
       <Navbar />
@@ -68,6 +99,14 @@ const Products = () => {
                     Order Now
                   </Button>
                 </a>
+                <p style={{ marginTop: "10px" }}>
+                  or
+                  <span style={{ color: "green" }} onClick={handleEnglish}>
+                    {" "}
+                    free download{" "}
+                  </span>
+                  in pdf
+                </p>
               </Col>
             </Row>
           </div>
@@ -208,6 +247,14 @@ const Products = () => {
                     Order Now
                   </Button>
                 </a>
+                <p style={{ marginTop: "22px" }}>
+                  or
+                  <span style={{ color: "green" }} onClick={handleUrdu}>
+                    {" "}
+                    free download{" "}
+                  </span>
+                  in pdf
+                </p>
               </Col>
             </Row>
           </div>
