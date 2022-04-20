@@ -98,18 +98,24 @@ const Products = () => {
                   id="productText"
                   title={descriptions.english}
                 >
-                  {descriptions.english.substring(0, 127)}...see more...
+                  {descriptions.english.substring(0, 123)}...see more
                 </p>
 
                 <h1 className="productPrice pb-3">$5</h1>
-                <a href="http://www.darussalamcanada.com" target="_blank">
+                <a
+                  href="https://darussalamcanada.com/product/tajweed-made-easy-arabic-english/"
+                  target="_blank"
+                >
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
                 </a>
                 <p style={{ marginTop: "10px" }}>
                   or
-                  <span style={{ color: "green" }} onClick={handleEnglish}>
+                  <span
+                    style={{ color: "green", cursor: "pointer" }}
+                    onClick={handleEnglish}
+                  >
                     {" "}
                     free download{" "}
                   </span>
@@ -150,7 +156,7 @@ const Products = () => {
                   {descriptions.french.substring(0, 89)}...voir plus...
                 </p>
                 {/* <h1 className="productPrice pb-3">$5</h1>
-                <a href="http://www.darussalamcanada.com" target="_blank">
+                <a href="https://darussalamcanada.com/product/tajweed-made-easy-arabic-english/" target="_blank">
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
@@ -194,7 +200,7 @@ const Products = () => {
                   {descriptions.malay.substring(0, 90)}...lihat lagi...
                 </p>
                 {/* <h1 className="productPrice pb-3">$5</h1>
-                <a href="http://www.darussalamcanada.com" target="_blank">
+                <a href="https://darussalamcanada.com/product/tajweed-made-easy-arabic-english/" target="_blank">
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
@@ -262,17 +268,23 @@ const Products = () => {
                   title={descriptions.urdu}
                 >
                   {descriptions.urdu.substring(0, 159)}
-                  {"..ا ب ت.."}
+                  {"...مزید دیکھیں"}
                 </p>
                 <h1 className="productPrice pb-3">$5</h1>
-                <a href="http://www.darussalamcanada.com" target="_blank">
+                <a
+                  href="https://darussalamcanada.com/product/tajweed-made-easy-arabic-english/"
+                  target="_blank"
+                >
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
                 </a>
                 <p style={{ marginTop: "22px" }}>
                   or
-                  <span style={{ color: "green" }} onClick={handleUrdu}>
+                  <span
+                    style={{ color: "green", cursor: "pointer" }}
+                    onClick={handleUrdu}
+                  >
                     {" "}
                     free download{" "}
                   </span>
@@ -317,7 +329,7 @@ const Products = () => {
                   {descriptions.russian.substring(0, 100)}...узнать больше...
                 </p>
                 {/* <h1 className="productPrice pb-3">$5</h1>
-                <a href="http://www.darussalamcanada.com" target="_blank">
+                <a href="https://darussalamcanada.com/product/tajweed-made-easy-arabic-english/" target="_blank">
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
@@ -361,7 +373,7 @@ const Products = () => {
                   {descriptions.tamil.substring(0, 90)}...மேலும் பார்க்க...
                 </p>
                 {/* <h1 className="productPrice pb-3 mb-4 ">$5</h1>
-                <a href="http://www.darussalamcanada.com" target="_blank">
+                <a href="https://darussalamcanada.com/product/tajweed-made-easy-arabic-english/" target="_blank">
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
