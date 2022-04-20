@@ -36,7 +36,7 @@ const Footer = () => {
                 <img src={instagram} alt="tajweed_logo" />
               </a>
               <a
-                href="https://apps.apple.com/us/app/tajweed-made-easy/id1617022976"
+                href="https://www.youtube.com/channel/UCTs4DZqPKQtE6QUgRaJ5rhg"
                 className="link"
               >
                 <img src={youtube} alt="tajweed_logo" />

@@ -119,18 +119,24 @@ const Slider = () => {
                 alt="TajweedMadeEasy"
               />
               <p className="s-text text-left py-4" title={descriptions.english}>
-                {descriptions.english.substring(0, 128)}..See more..
+                {descriptions.english.substring(0, 128)}...See more
               </p>
               <h1 className="price pb-3">$5</h1>
               <div style={{ display: "flex", alignItems: "center" }}>
-                <a href="http://www.darussalamcanada.com" target="_blank">
+                <a
+                  href="https://darussalamcanada.com/product/tajweed-made-easy-arabic-english/"
+                  target="_blank"
+                >
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
                 </a>
                 <p>
                   or
-                  <span style={{ color: "green" }} onClick={handleEnglish}>
+                  <span
+                    style={{ color: "green", cursor: "pointer" }}
+                    onClick={handleEnglish}
+                  >
                     {" "}
                     free download{" "}
                   </span>
@@ -165,18 +171,24 @@ const Slider = () => {
                 onClick={() => setOpen(true)}
               />
               <p className="s-text text-left py-4" title={descriptions.urdu}>
-                {descriptions.urdu.substring(0, 150)}...ا ب ت
+                {descriptions.urdu.substring(0, 150)}... مزید دیکھیں
               </p>
               <h1 className="price pb-3">$5</h1>
               <div style={{ display: "flex", alignItems: "center" }}>
-                <a href="http://www.darussalamcanada.com" target="_blank">
+                <a
+                  href="https://darussalamcanada.com/product/tajweed-made-easy-arabic-english/"
+                  target="_blank"
+                >
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
                 </a>
                 <p>
                   or
-                  <span style={{ color: "green" }} onClick={handleUrdu}>
+                  <span
+                    style={{ color: "green", cursor: "pointer" }}
+                    onClick={handleUrdu}
+                  >
                     {" "}
                     free download{" "}
                   </span>
@@ -211,7 +223,7 @@ const Slider = () => {
             <Col lg="6" className="c2">
               <img src={Tajweedsim} className="book" alt="Tajweedurdu" />
               <p className="s-text text-left py-4" title={descriptions.french}>
-                {descriptions.french.substring(0, 117)}..voir plus..
+                {descriptions.french.substring(0, 117)}...voir plus
               </p>
               {/* <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
@@ -247,7 +259,7 @@ const Slider = () => {
             <Col lg="6" className="c2">
               <img src={TajweedLatin} className="book" alt="Tajweedurdu" />
               <p className="s-text text-left py-4" title={descriptions.russian}>
-                {descriptions.russian.substring(0, 150)}..узнать больше..
+                {descriptions.russian.substring(0, 150)}...узнать больше
               </p>
               {/* <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
@@ -283,7 +295,7 @@ const Slider = () => {
             <Col lg="6" className="c2">
               <img src={TajweedArabic} className="book" alt="TajweedArabic" />
               <p className="s-text text-left py-4" title={descriptions.malay}>
-                {descriptions.malay.substring(0, 126)}..lihat lagi..
+                {descriptions.malay.substring(0, 126)}...lihat lagi
               </p>
               {/* <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
@@ -319,7 +331,7 @@ const Slider = () => {
             <Col lg="6" className="c2">
               <img src={Tajweedturkish} className="book" alt="Tajweedturkish" />
               <p className="s-text text-left py-4" title={descriptions.tamil}>
-                {descriptions.tamil.substring(0, 130)}..மேலும் பார்க்க..
+                {descriptions.tamil.substring(0, 130)}...மேலும் பார்க்க
               </p>
               {/* <h1 className="price pb-3">$5</h1>
               <a href="http://www.darussalamcanada.com" target="_blank">
