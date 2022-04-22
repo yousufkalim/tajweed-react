@@ -97,6 +97,7 @@ const Slider = () => {
           >
             <Col lg="6" className=" c1 text-right">
               <p
+                className="uppertext"
                 style={{
                   textAlign: "center",
                   color: "green",
@@ -107,7 +108,7 @@ const Slider = () => {
               </p>
               <img
                 src={Picture}
-                className="image"
+                className="s-image"
                 alt="img"
                 onClick={() => setOpen(true)}
               />
@@ -118,7 +119,10 @@ const Slider = () => {
                 className="book"
                 alt="TajweedMadeEasy"
               />
-              <p className="s-text text-left py-4" title={descriptions.english}>
+              <p
+                className="s-text text-center y-4"
+                title={descriptions.english}
+              >
                 {descriptions.english.substring(0, 128)}...See more
               </p>
               <h1 className="price pb-3">$5</h1>
@@ -153,6 +157,7 @@ const Slider = () => {
           >
             <Col lg="6" className=" c1 text-right">
               <p
+                className="uppertext"
                 style={{
                   textAlign: "center",
                   color: "green",
@@ -161,7 +166,7 @@ const Slider = () => {
               >
                 Urdu
               </p>
-              <img src={urdu} className="image" alt="img" />
+              <img src={urdu} className="s-image" alt="img" />
             </Col>
             <Col lg="6" className="c2">
               <img
@@ -170,7 +175,7 @@ const Slider = () => {
                 alt="Tajweedurdu"
                 onClick={() => setOpen(true)}
               />
-              <p className="s-text text-left py-4" title={descriptions.urdu}>
+              <p className="s-text text-center  py-4" title={descriptions.urdu}>
                 {descriptions.urdu.substring(0, 150)}... مزید دیکھیں
               </p>
               <h1 className="price pb-3">$5</h1>
@@ -205,6 +210,7 @@ const Slider = () => {
           >
             <Col lg="6" className=" c1 text-right">
               <p
+                className="uppertext"
                 style={{
                   textAlign: "center",
                   color: "green",
@@ -215,14 +221,14 @@ const Slider = () => {
               </p>
               <img
                 src={simplifie}
-                className="image"
+                className="s-image"
                 alt="img"
                 onClick={() => setOpen(true)}
               />
             </Col>
             <Col lg="6" className="c2">
               <img src={Tajweedsim} className="book" alt="Tajweedurdu" />
-              <p className="s-text text-left py-4" title={descriptions.french}>
+              <p className="s-text text-center y-4" title={descriptions.french}>
                 {descriptions.french.substring(0, 117)}...voir plus
               </p>
               {/* <h1 className="price pb-3">$5</h1>
@@ -241,6 +247,7 @@ const Slider = () => {
           >
             <Col lg="6" className=" c1 text-right">
               <p
+                className="uppertext"
                 style={{
                   textAlign: "center",
                   color: "green",
@@ -251,14 +258,17 @@ const Slider = () => {
               </p>
               <img
                 src={latin}
-                className="image"
+                className="s-image"
                 alt="img"
                 onClick={() => setOpen(true)}
               />
             </Col>
             <Col lg="6" className="c2">
               <img src={TajweedLatin} className="book" alt="Tajweedurdu" />
-              <p className="s-text text-left py-4" title={descriptions.russian}>
+              <p
+                className="s-text text-center y-4"
+                title={descriptions.russian}
+              >
                 {descriptions.russian.substring(0, 150)}...узнать больше
               </p>
               {/* <h1 className="price pb-3">$5</h1>
@@ -277,6 +287,7 @@ const Slider = () => {
           >
             <Col lg="6" className=" c1 text-right">
               <p
+                className="uppertext"
                 style={{
                   textAlign: "center",
                   color: "green",
@@ -287,14 +298,14 @@ const Slider = () => {
               </p>
               <img
                 src={arabic}
-                className="image"
+                className="s-image"
                 alt="img"
                 onClick={() => setOpen(true)}
               />
             </Col>
             <Col lg="6" className="c2">
               <img src={TajweedArabic} className="book" alt="TajweedArabic" />
-              <p className="s-text text-left py-4" title={descriptions.malay}>
+              <p className="s-text text-center y-4" title={descriptions.malay}>
                 {descriptions.malay.substring(0, 126)}...lihat lagi
               </p>
               {/* <h1 className="price pb-3">$5</h1>
@@ -313,6 +324,7 @@ const Slider = () => {
           >
             <Col lg="6" className=" c1 text-right">
               <p
+                className="uppertext"
                 style={{
                   textAlign: "center",
                   color: "green",
@@ -323,14 +335,14 @@ const Slider = () => {
               </p>
               <img
                 src={turkish}
-                className="image"
+                className="s-image"
                 alt="img"
                 onClick={() => setOpen(true)}
               />
             </Col>
             <Col lg="6" className="c2">
               <img src={Tajweedturkish} className="book" alt="Tajweedturkish" />
-              <p className="s-text text-left py-4" title={descriptions.tamil}>
+              <p className="s-text text-center y-4" title={descriptions.tamil}>
                 {descriptions.tamil.substring(0, 130)}...மேலும் பார்க்க
               </p>
               {/* <h1 className="price pb-3">$5</h1>

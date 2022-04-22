@@ -33,7 +33,7 @@ const Navbar = ({ about }) => {
             <ul id="menu" className="mt-3">
               <li>
                 <NavLink
-                  to="/"
+                  to="/home"
                   className="nav-item"
                   activeClassName="active-nav-item"
                 >
