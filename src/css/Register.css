@@ -41,6 +41,13 @@ Label {
   font-family: "GothicBold";
 }
 
+.react-tel-input .flag-dropdown {
+  border-radius: 27px !important;
+  margin-left: 20px !important;
+  background-color: white !important;
+  border: none !important;
+}
+
 @media only screen and (max-width: 600px) {
   .r-vector {
     display: none;
