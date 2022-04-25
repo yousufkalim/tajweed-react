@@ -4,6 +4,7 @@ import { Row, Col, FormGroup, Form, Input, Label, Button } from "reactstrap";
 import { useState } from "react";
 import FormTopBar from "../components/FormTopBar";
 import { useHistory } from "react-router-dom";
+import PhoneInput from "react-phone-input-2";
 
 const Register = () => {
   let history = useHistory();
@@ -21,6 +22,10 @@ const Register = () => {
   });
   const handleInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
+  };
+
+  const handlePhoneChange = (e) => {
+    setUser({ ...user, whatsapp_number: e });
   };
   const handleNext = () => {
     if (user?.firstName === "") {
@@ -241,7 +246,7 @@ const Register = () => {
                 >
                   WhatsApp Number *
                 </label>
-                <Input
+                {/* <Input
                   className="form-control-alternative"
                   id="input-whatsapp_number"
                   type="text"
@@ -253,6 +258,29 @@ const Register = () => {
                     border: "1px solid black",
                     marginBottom: "1%",
                     marginTop: "2%",
+                  }}
+                /> */}
+
+                <PhoneInput
+                  className="form-control-alternative"
+                  id="input-whatsapp_number"
+                  country={"us"}
+                  type="text"
+                  value={user.whatsapp_number}
+                  name="whatsapp_number"
+                  onChange={handlePhoneChange}
+                  containerStyle={{
+                    borderRadius: "20px",
+                    border: "1px solid black",
+                    marginBottom: "1%",
+                    marginTop: "2%",
+                  }}
+                  inputStyle={{
+                    border: "none",
+                    width: "96%",
+                    borderRadius: "27px",
+                    marginLeft: "10px",
+                    backgroundColor: "white",
                   }}
                 />
               </FormGroup>
