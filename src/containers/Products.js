@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useState } from "react";
 import Picture from "../assets/images/Picture.svg";
 import urdu from "../assets/images/urdu.svg";
 import TajweedMadeEasy from "../assets/images/TajweedMadeEasy.svg";
@@ -15,8 +16,42 @@ import turkish from "../assets/images/turkish.svg";
 import releasing from "../assets/images/releasing.svg";
 import TajweedR from "../assets/images/TajweedR.svg";
 import { Row, Col, Button } from "reactstrap";
+import { descriptions } from "../utils/descriptions";
+import axios from "axios";
+import PopUp from "../components/PopUp";
 
 const Products = () => {
+  const [open, setOpen] = useState(false);
+  const handleUrdu = () => {
+    const path = process.env.REACT_APP_FILE_PATH;
+    let file = `${path}/uploads/tajweed-urdu.pdf`;
+    axios({
+      url: file, //your url
+      method: "GET",
+      responseType: "blob", // important
+    }).then((response) => {
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "tajweed-urdu.pdf");
+      link.click();
+    });
+  };
+  const handleEnglish = () => {
+    const path = process.env.REACT_APP_FILE_PATH;
+    let file = `${path}/uploads/tajweed-english.pdf`;
+    axios({
+      url: file, //your url
+      method: "GET",
+      responseType: "blob", // important
+    }).then((response) => {
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "tajweed-english.pdf");
+      link.click();
+    });
+  };
   return (
     <>
       <Navbar />
@@ -35,7 +70,21 @@ const Products = () => {
               style={{ height: "70%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
-                <img src={Picture} className="productImage" alt="img" />
+                <p
+                  style={{
+                    textAlign: "center",
+                    color: "green",
+                    fontSize: "xx-large",
+                  }}
+                >
+                  English
+                </p>
+                <img
+                  src={Picture}
+                  className="productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img
@@ -43,16 +92,35 @@ const Products = () => {
                   className="bookText"
                   alt="TajweedMadeEasy"
                 />
-                <p className="s-text text-left pt-4" id="productText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
+
+                <p
+                  className="s-text text-left pt-4"
+                  id="productText"
+                  title={descriptions.english}
+                >
+                  {descriptions.english.substring(0, 123)}...see more
                 </p>
+
                 <h1 className="productPrice pb-3">$5</h1>
-                <a href="http://www.darussalamcanada.com" target="_blank">
+                <a
+                  href="https://darussalamcanada.com/product/tajweed-made-easy-arabic-english/"
+                  target="_blank"
+                >
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
                 </a>
+                <p style={{ marginTop: "10px" }}>
+                  or
+                  <span
+                    style={{ color: "green", cursor: "pointer" }}
+                    onClick={handleEnglish}
+                  >
+                    {" "}
+                    free download{" "}
+                  </span>
+                  in pdf
+                </p>
               </Col>
             </Row>
           </div>
@@ -62,20 +130,37 @@ const Products = () => {
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
-                <img src={simplifie} className="productImage" alt="img" />
+                <p
+                  style={{
+                    textAlign: "center",
+                    color: "green",
+                    fontSize: "xx-large",
+                  }}
+                >
+                  French
+                </p>
+                <img
+                  src={simplifie}
+                  className="productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img src={Tajweedsim} className="bookText" alt="Tajweedurdu" />
-                <p className="s-text text-left pt-4" id="productText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's{" "}
+                <p
+                  className="s-text text-left pt-4"
+                  id="productText"
+                  title={descriptions.french}
+                >
+                  {descriptions.french.substring(0, 89)}...voir plus...
                 </p>
-                <h1 className="productPrice pb-3">$5</h1>
-                <a href="http://www.darussalamcanada.com" target="_blank">
+                {/* <h1 className="productPrice pb-3">$5</h1>
+                <a href="https://darussalamcanada.com/product/tajweed-made-easy-arabic-english/" target="_blank">
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
-                </a>
+                </a> */}
               </Col>
             </Row>
           </div>
@@ -85,7 +170,21 @@ const Products = () => {
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
-                <img src={arabic} className=" productImage" alt="img" />
+                <p
+                  style={{
+                    textAlign: "center",
+                    color: "green",
+                    fontSize: "xx-large",
+                  }}
+                >
+                  Muddah
+                </p>
+                <img
+                  src={arabic}
+                  className=" productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img
@@ -93,20 +192,23 @@ const Products = () => {
                   className="bookText"
                   alt="TajweedArabic"
                 />
-                <p className="s-text text-left pt-4" id="productText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's{" "}
+                <p
+                  className="s-text text-left pt-4"
+                  id="productText"
+                  title={descriptions.malay}
+                >
+                  {descriptions.malay.substring(0, 90)}...lihat lagi...
                 </p>
-                <h1 className="productPrice pb-3">$5</h1>
-                <a href="http://www.darussalamcanada.com" target="_blank">
+                {/* <h1 className="productPrice pb-3">$5</h1>
+                <a href="https://darussalamcanada.com/product/tajweed-made-easy-arabic-english/" target="_blank">
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
-                </a>
+                </a> */}
               </Col>
             </Row>
           </div>
-          <div className="s-container container">
+          {/* <div className="s-container container">
             <Row
               className="slider"
               style={{ height: "100%", backgroundColor: "inherit" }}
@@ -132,7 +234,7 @@ const Products = () => {
                 </Button>
               </Col>
             </Row>
-          </div>
+          </div> */}
         </Col>
         <Col lg="6">
           {" "}
@@ -142,20 +244,52 @@ const Products = () => {
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
-                <img src={urdu} className="productImage" alt="img" />
+                <p
+                  style={{
+                    textAlign: "center",
+                    color: "green",
+                    fontSize: "xx-large",
+                  }}
+                >
+                  Urdu
+                </p>
+                <img
+                  src={urdu}
+                  className="productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img src={Tajweedurdu} className="bookText" alt="Tajweedurdu" />
-                <p className="s-text text-left pt-4" id="productText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's{" "}
+                <p
+                  className="s-text text-left pt-4"
+                  id="productText"
+                  title={descriptions.urdu}
+                >
+                  {descriptions.urdu.substring(0, 159)}
+                  {"...مزید دیکھیں"}
                 </p>
                 <h1 className="productPrice pb-3">$5</h1>
-                <a href="http://www.darussalamcanada.com" target="_blank">
+                <a
+                  href="https://darussalamcanada.com/product/tajweed-made-easy-arabic-english/"
+                  target="_blank"
+                >
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
                 </a>
+                <p style={{ marginTop: "22px" }}>
+                  or
+                  <span
+                    style={{ color: "green", cursor: "pointer" }}
+                    onClick={handleUrdu}
+                  >
+                    {" "}
+                    free download{" "}
+                  </span>
+                  in pdf
+                </p>
               </Col>
             </Row>
           </div>
@@ -165,7 +299,21 @@ const Products = () => {
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
-                <img src={latin} className=" productImage" alt="img" />
+                <p
+                  style={{
+                    textAlign: "center",
+                    color: "green",
+                    fontSize: "xx-large",
+                  }}
+                >
+                  Russian
+                </p>
+                <img
+                  src={latin}
+                  className=" productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img
@@ -173,16 +321,19 @@ const Products = () => {
                   className=" bookText"
                   alt="Tajweedurdu"
                 />
-                <p className="s-text text-left pt-4" id="productText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's{" "}
+                <p
+                  className="s-text text-left pt-4"
+                  id="productText"
+                  title={descriptions.russian}
+                >
+                  {descriptions.russian.substring(0, 100)}...узнать больше...
                 </p>
-                <h1 className="productPrice pb-3">$5</h1>
-                <a href="http://www.darussalamcanada.com" target="_blank">
+                {/* <h1 className="productPrice pb-3">$5</h1>
+                <a href="https://darussalamcanada.com/product/tajweed-made-easy-arabic-english/" target="_blank">
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
-                </a>
+                </a> */}
               </Col>
             </Row>
           </div>
@@ -192,7 +343,21 @@ const Products = () => {
               style={{ height: "100%", backgroundColor: "inherit" }}
             >
               <Col lg="6" className=" c11 text-right">
-                <img src={turkish} className="productImage" alt="img" />
+                <p
+                  style={{
+                    textAlign: "center",
+                    color: "green",
+                    fontSize: "xx-large",
+                  }}
+                >
+                  Tamil
+                </p>
+                <img
+                  src={turkish}
+                  className="productImage"
+                  alt="img"
+                  onClick={() => setOpen(true)}
+                />
               </Col>
               <Col lg="6" className="c22">
                 <img
@@ -200,22 +365,26 @@ const Products = () => {
                   className="mb-4 bookText"
                   alt="Tajweedturkish"
                 />
-                <p className="s-text text-left pt-4" id="productText">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's{" "}
+                <p
+                  className="s-text text-left pt-4"
+                  id="productText"
+                  title={descriptions.tamil}
+                >
+                  {descriptions.tamil.substring(0, 90)}...மேலும் பார்க்க...
                 </p>
-                <h1 className="productPrice pb-3 mb-4 ">$5</h1>
-                <a href="http://www.darussalamcanada.com" target="_blank">
+                {/* <h1 className="productPrice pb-3 mb-4 ">$5</h1>
+                <a href="https://darussalamcanada.com/product/tajweed-made-easy-arabic-english/" target="_blank">
                   <Button color="success" id="s-button" className="button">
                     Order Now
                   </Button>
-                </a>
+                </a> */}
               </Col>
             </Row>
           </div>
         </Col>
       </Row>
       <Footer />
+      <PopUp open={open} handleClose={() => setOpen(false)} />
     </>
   );
 };

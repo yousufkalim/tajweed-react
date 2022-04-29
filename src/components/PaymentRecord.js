@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Characters2 from "../assets/images/Characters2.svg";
 import Vector2 from "../assets/images/Vector2.svg";
-
+import moment from "moment"
 import { Button } from "reactstrap";
 
 const PaymentRecord = ({ record }) => {
@@ -34,7 +34,7 @@ const PaymentRecord = ({ record }) => {
               <Row className="orderDetails">
                 {" "}
                 <Col lg="2">Start From</Col>
-                <Col lg="2">{record.startingDate}</Col>
+                <Col lg="2">{moment(record?.start_date).format("YYYY-MM-DD")}</Col>
               </Row>
               <Row className="orderDetails" style={{ marginTop: "28px" }}>
                 {" "}
@@ -72,7 +72,7 @@ const PaymentRecord = ({ record }) => {
                     fontFamily: "GothicBold",
                   }}
                 >
-                  {record.validTill}
+                  {moment(record?.end_date).format("YYYY-MM-DD")}
                 </Col>
               </Row>
             </div>

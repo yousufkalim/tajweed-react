@@ -1,6 +1,6 @@
 // Init
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 // Routes
 import Home from "../containers/Home.js";
 import Register from "../containers/Register";
@@ -17,7 +17,7 @@ import PaymentsAfterLogin from "../containers/PaymentsAfterLogin";
 const index = () => {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/home" component={Home} />
       <Route exact path="/register" component={Register} />
       <Route exact path="/course" component={Course} />
       <Route exact path="/payment" component={Payment} />
@@ -27,6 +27,7 @@ const index = () => {
       <Route exact path="/About" component={About} />
       <Route exact path="/ContactUs" component={ContactUs} />
       <Route exact path="/privacy" component={PrivacyPolicy} />
+      <Redirect to="/home" />
     </Switch>
   );
 };

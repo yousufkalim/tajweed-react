@@ -3,10 +3,8 @@ import Footer from "../components/Footer";
 import Table from "../assets/images/Table.svg";
 import Icon from "../assets/images/Icon.svg";
 import Email from "../assets/images/Email.svg";
-
 import { useState } from "react";
 import { Row, Col, FormGroup, Form, Input, Label, Button } from "reactstrap";
-import { Link } from "react-router-dom";
 import api from "../api/index";
 import { toast } from "react-toastify";
 
@@ -40,7 +38,7 @@ const ContactUs = () => {
         <div className="container contactBox">
           <Row>
             <Col lg="6">
-              <h1 className="boxContent">Get a quote</h1>
+              <h1 className="boxContent">Ask for details</h1>
               <p className="contact-text">
                 Fill up the form and our Team will get back to you within 24
                 hours.
@@ -48,7 +46,7 @@ const ContactUs = () => {
               <div className="info">
                 {" "}
                 <div>
-                  <img src={Icon} alt="phone" /> &nbsp; 042 2233445
+                  <img src={Icon} alt="phone" /> &nbsp; +1 (416) 400-9988
                 </div>{" "}
                 <div style={{ marginLeft: "2%" }}>
                   <img src={Email} alt="email" /> &nbsp;contact@tajweed.com
@@ -76,7 +74,6 @@ const ContactUs = () => {
                   <Input
                     className="form-control-alternative"
                     id="input-name"
-                    placeholder="name"
                     type="text"
                     value={user.name}
                     name="name"
@@ -95,7 +92,6 @@ const ContactUs = () => {
                   <Input
                     className="form-control-alternative"
                     id="input-email"
-                    placeholder="johndoe@example.com"
                     type="text"
                     value={user.email}
                     name="email"
@@ -114,7 +110,6 @@ const ContactUs = () => {
                   <Input
                     className="form-control-alternative"
                     id="input-name"
-                    placeholder="Type something"
                     type="textarea"
                     value={user.message}
                     name="message"

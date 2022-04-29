@@ -33,6 +33,15 @@ const Navbar = ({ about }) => {
             <ul id="menu" className="mt-3">
               <li>
                 <NavLink
+                  to="/home"
+                  className="nav-item"
+                  activeClassName="active-nav-item"
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/About"
                   className="nav-item"
                   activeClassName="active-nav-item"
@@ -79,14 +88,15 @@ const Navbar = ({ about }) => {
                 style={{ zIndex: "10" }}
                 right
               >
-                <DropdownItem style={{ color: "#47b45f" }}>
-                  <span>
-                    {user.first_name} {user.last_name}
-                    <br />
-                    {user.email}
-                  </span>
-                </DropdownItem>
-
+                <Link to="/Products">
+                  <DropdownItem style={{ color: "#47b45f" }}>
+                    <span>
+                      {user.first_name} {user.last_name}
+                      <br />
+                      {user.email}
+                    </span>
+                  </DropdownItem>
+                </Link>
                 <DropdownItem divider />
                 <DropdownItem onClick={handleLogout}>
                   <span>Logout</span>

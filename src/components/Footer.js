@@ -23,9 +23,24 @@ const Footer = () => {
               </Link>
             </div>
             <div className="icons" style={{ marginLeft: "28%" }}>
-              <img src={Facebook} alt="tajweed_logo" />
-              <img src={instagram} alt="tajweed_logo" />
-              <img src={youtube} alt="tajweed_logo" />
+              <a
+                href="https://www.facebook.com/easytajweedlearning/?ref=pages_you_manage"
+                className="link"
+              >
+                <img src={Facebook} alt="tajweed_logo" />
+              </a>
+              <a
+                href="https://www.instagram.com/madeeasytajweed/"
+                className="link"
+              >
+                <img src={instagram} alt="tajweed_logo" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCTs4DZqPKQtE6QUgRaJ5rhg"
+                className="link"
+              >
+                <img src={youtube} alt="tajweed_logo" />
+              </a>
             </div>
             <div className="f-text pb-3">
               <h6 style={{ marginLeft: "28%" }}>Terms & Conditions</h6>
@@ -60,8 +75,18 @@ const Footer = () => {
               anywhere even without internet.
             </h6>
             <div className="box-buttons2">
-              <img src={Apple} className="p-3" alt="Apple" />
-              <img src={Google} alt="Google" />
+              <a
+                href="https://apps.apple.com/us/app/tajweed-made-easy/id1617022976"
+                className="link"
+              >
+                <img src={Apple} className="p-3" alt="Apple" />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.falcon.tajweed"
+                className="link"
+              >
+                <img src={Google} alt="Google" />
+              </a>
             </div>
           </Col>
 

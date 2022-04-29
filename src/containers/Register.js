@@ -4,6 +4,7 @@ import { Row, Col, FormGroup, Form, Input, Label, Button } from "reactstrap";
 import { useState } from "react";
 import FormTopBar from "../components/FormTopBar";
 import { useHistory } from "react-router-dom";
+import PhoneInput from "react-phone-input-2";
 
 const Register = () => {
   let history = useHistory();
@@ -21,6 +22,10 @@ const Register = () => {
   });
   const handleInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
+  };
+
+  const handlePhoneChange = (e) => {
+    setUser({ ...user, whatsapp_number: e });
   };
   const handleNext = () => {
     if (user?.firstName === "") {
@@ -80,7 +85,6 @@ const Register = () => {
                   className="form-control-alternative"
                   id="input-fname"
                   required={true}
-                  placeholder="Anna"
                   type="text"
                   value={user.firstName}
                   name="firstName"
@@ -103,7 +107,6 @@ const Register = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-lname"
-                  placeholder="Doe"
                   type="text"
                   value={user.lastName}
                   name="lastName"
@@ -127,7 +130,6 @@ const Register = () => {
                 <Input
                   id="exampleSelect"
                   name="gender"
-                  placeholder="Select Gender"
                   value={user.gender}
                   onChange={handleInputChange}
                   style={{
@@ -154,7 +156,6 @@ const Register = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-age"
-                  placeholder="20"
                   type="number"
                   value={user.age}
                   name="age"
@@ -179,7 +180,6 @@ const Register = () => {
                   className="form-control-alternative"
                   id="input-city"
                   required={true}
-                  placeholder="Ottawa"
                   type="text"
                   value={user.city}
                   name="city"
@@ -201,7 +201,6 @@ const Register = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-state"
-                  placeholder="Alberta"
                   type="text"
                   value={user.state}
                   name="state"
@@ -226,7 +225,6 @@ const Register = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-country"
-                  placeholder="Canada"
                   type="text"
                   value={user.country}
                   name="country"
@@ -248,10 +246,9 @@ const Register = () => {
                 >
                   WhatsApp Number *
                 </label>
-                <Input
+                {/* <Input
                   className="form-control-alternative"
                   id="input-whatsapp_number"
-                  placeholder="+92 311 1234567"
                   type="text"
                   value={user.whatsapp_number}
                   name="whatsapp_number"
@@ -261,6 +258,29 @@ const Register = () => {
                     border: "1px solid black",
                     marginBottom: "1%",
                     marginTop: "2%",
+                  }}
+                /> */}
+
+                <PhoneInput
+                  className="form-control-alternative"
+                  id="input-whatsapp_number"
+                  country={"us"}
+                  type="text"
+                  value={user.whatsapp_number}
+                  name="whatsapp_number"
+                  onChange={handlePhoneChange}
+                  containerStyle={{
+                    borderRadius: "20px",
+                    border: "1px solid black",
+                    marginBottom: "1%",
+                    marginTop: "2%",
+                  }}
+                  inputStyle={{
+                    border: "none",
+                    width: "96%",
+                    borderRadius: "27px",
+                    marginLeft: "10px",
+                    backgroundColor: "white",
                   }}
                 />
               </FormGroup>
@@ -275,7 +295,6 @@ const Register = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-email"
-                  placeholder="johndoe@example.com"
                   type="text"
                   value={user.email}
                   name="email"
@@ -297,7 +316,6 @@ const Register = () => {
                 <Input
                   className="form-control-alternative"
                   id="input-password"
-                  placeholder="Password"
                   type="password"
                   value={user.password}
                   name="password"
